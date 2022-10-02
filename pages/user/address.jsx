@@ -1,18 +1,18 @@
 import { Footer, MetaData, Navbar, SubHeader, User } from "../../components";
 
-const account = () => {
+const address = () => {
   return (
     <>
       <MetaData
-        title="Ikomers | My Account"
-        content="This is page for your acccount"
+        title="Ikomers | Address"
+        content="Page for look your address"
       />
       <Navbar />
-      <SubHeader title="My Account" />
+      <SubHeader title="My Address" />
       <User />
       <Footer />
     </>
   );
 };
 
-export default account;
+export default address;

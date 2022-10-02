@@ -1,12 +1,12 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { Address, Payment, Profile } from "../../components";
 
-const User = () => {
+const MyOrder = () => {
   const router = useRouter();
+
   return (
-    <div className="w-full h-full p-4 bg-gray-100 flex lg:flex-row flex-col gap-5 lg:px-[100px] px-5 py-10">
-      <div className="block w-full lg:w-[30%] h-full bg-white p-4">
+    <div className="w-full h-full p-4 bg-gray-100 flex gap-5 lg:px-[100px] px-10 py-10">
+      <div className="block w-[30%] h-full bg-white p-4">
         <div className="flex gap-3">
           <img
             src="../../images/art.jpg"
@@ -72,7 +72,7 @@ const User = () => {
                     : "font-medium text-gray-400 hover:text-gray-700"
                 }
               >
-                Profile
+                All
               </h3>
             </div>
           </Link>
@@ -91,7 +91,7 @@ const User = () => {
                     : "font-medium text-gray-400 hover:text-gray-700"
                 }
               >
-                Address
+                Not Paid
               </h3>
             </div>
           </Link>
@@ -110,19 +110,38 @@ const User = () => {
                     : "font-medium text-gray-400 hover:text-gray-700"
                 }
               >
-                Payment
+                Completed
+              </h3>
+            </div>
+          </Link>
+          <Link href="/user/payment">
+            <div
+              className={
+                router.asPath == "/user/payment"
+                  ? "py-3 px-6 border-blue-500 border-b-2 cursor-pointer"
+                  : "py-3 px-6 cursor-pointer"
+              }
+            >
+              <h3
+                className={
+                  router.asPath == "/user/payment"
+                    ? "font-medium text-blue-500"
+                    : "font-medium text-gray-400 hover:text-gray-700"
+                }
+              >
+                Canceled
               </h3>
             </div>
           </Link>
         </div>
-        <div className="p-8">
-          {router.asPath == "/user" ? <Profile /> : ""}
-          {router.asPath == "/user/address" ? <Address /> : ""}
-          {router.asPath == "/user/payment" ? <Payment /> : ""}
-        </div>
+        {/* <div className="p-8">
+            {router.asPath == "/user" ? <Profile /> : ""}
+            {router.asPath == "/user/address" ? <Address /> : ""}
+            {router.asPath == "/user/payment" ? <Payment /> : ""}
+          </div> */}
       </div>
     </div>
   );
 };
 
-export default User;
+export default MyOrder;
