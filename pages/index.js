@@ -1,4 +1,4 @@
-import { MetaData } from "../components";
+import { Header, MetaData, Navbar } from "../components";
 
 export default function Home() {
   return (
@@ -7,6 +7,8 @@ export default function Home() {
         title="ikomers"
         content="Ikomers is a template for ecommerce website that you can get feel FREE and you can use for any requirement that you need."
       />
+      <Navbar />
+      <Header />
     </>
   );
 }
