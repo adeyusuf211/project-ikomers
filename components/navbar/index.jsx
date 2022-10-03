@@ -13,10 +13,16 @@ const Navbar = () => {
                     <a href="#">Blogs</a>
                 </li>
             </ul>
-            <div className="flex items-center gap-5">
-                <img src="../images/icons/search.svg" alt="gambar" />
-                <img src="../images/icons/cart.svg" alt="gambar" />
-                <img src="../images/icons/user.svg" alt="gambar" />
+            <div className="flex items-center">
+                <a href="#" className="p-2">
+                    <img src="../images/icons/search.svg" alt="gambar" />
+                </a>
+                <a href="#" className="p-2">
+                    <img src="../images/icons/cart.svg" alt="gambar" />
+                </a>
+                <a href="#" className="p-2">
+                    <img src="../images/icons/user.svg" alt="gambar" />
+                </a>
             </div>
         </div>
     )
