@@ -1,0 +1,38 @@
+const Category = () => {
+    return (
+        <div className="w-full h-full lg:px-[150px] px-5 py-10 flex gap-5 lg:overflow-y-hidden overflow-y-auto">
+            <div className="flex flex-col items-center justify-center gap-2">
+                <div className="w-14 h-14 rounded-full bg-gray-300 flex justify-center items-center">
+                    <img src="../images/icons/calendar.svg" alt="gambar" />
+                </div>
+                <h3 className="font-medium text-gray-600">Accesories</h3>
+            </div>
+            <div className="flex flex-col items-center justify-center gap-2">
+                <div className="w-14 h-14 rounded-full bg-gray-300 flex justify-center items-center">
+                    <img src="../images/icons/calendar.svg" alt="gambar" />
+                </div>
+                <h3 className="font-medium text-gray-600">Technology</h3>
+            </div>
+            <div className="flex flex-col items-center justify-center gap-2">
+                <div className="w-14 h-14 rounded-full bg-gray-300 flex justify-center items-center">
+                    <img src="../images/icons/calendar.svg" alt="gambar" />
+                </div>
+                <h3 className="font-medium text-gray-600">Clothes</h3>
+            </div>
+            <div className="flex flex-col items-center justify-center gap-2">
+                <div className="w-14 h-14 rounded-full bg-gray-300 flex justify-center items-center">
+                    <img src="../images/icons/calendar.svg" alt="gambar" />
+                </div>
+                <h3 className="font-medium text-gray-600">Furniture</h3>
+            </div>
+            <div className="flex flex-col items-center justify-center gap-2">
+                <div className="w-14 h-14 rounded-full bg-gray-300 flex justify-center items-center">
+                    <img src="../images/icons/calendar.svg" alt="gambar" />
+                </div>
+                <h3 className="font-medium text-gray-600">Something</h3>
+            </div>
+        </div>
+    )
+}
+
+export default Category;

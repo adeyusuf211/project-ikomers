@@ -1,8 +1,8 @@
 const Navbar = () => {
     return (
-        <div className="flex justify-between items-center lg:px-[150px] px-10 py-10">
+        <div className="flex justify-between items-center lg:px-[150px] px-10 py-10 relative">
             <h3 className="font-semibold uppercase">ikomers</h3>
-            <ul className="flex gap-10 text-gray-600 items-center">
+            <ul className="flex gap-10 lg:relative fixed bottom-0 right-0 w-full text-gray-600 justify-center items-center lg:bg-none bg-white lg:py-0 py-5">
                 <li>
                     <a href="#">Home</a>
                 </li>

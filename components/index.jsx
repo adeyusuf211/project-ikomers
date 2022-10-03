@@ -1,3 +1,17 @@
+export { default as Alert } from "./alert";
+export { default as Blog } from "./blog";
+export { default as BlogDetail } from "./blog/detail";
+export { default as Cart } from "./cart";
+export { default as Category } from "./category";
+export { default as Checkout } from "./checkout";
+export { default as Footer } from "./footer";
 export { default as Header } from "./header";
+export { default as Homepage } from "./homepage";
 export { default as MetaData } from "./metadata";
 export { default as Navbar } from "./navbar";
+export { default as Order } from "./order";
+export { default as Product } from "./product";
+export { default as ProductDetail } from "./product/detail";
+export { default as SubHeader } from "./subheader";
+export { default as User } from "./user";
+export { default as Profile } from "./user/profile";

@@ -1,4 +1,4 @@
-import { Header, MetaData, Navbar } from "../components";
+import { Header, Homepage, MetaData, Navbar } from "../components";
 
 export default function Home() {
   return (
@@ -9,6 +9,7 @@ export default function Home() {
       />
       <Navbar />
       <Header />
+      <Homepage />
     </>
   );
 }
