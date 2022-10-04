@@ -19,37 +19,36 @@ const Navbar = () => {
             <a href="#">Blogs</a>
           </li>
         </ul>
-        <div className="flex items-center">
-          <a href="#" className="p-2">
+        <ul className="flex gap-5">
+          <li className="cursor-pointer">
             <img src="../images/icons/search.svg" alt="gambar" />
-          </a>
-          <a href="#" className="p-2">
-            <img src="../images/icons/cart.svg" alt="gambar" />
-          </a>
-          <a href="#" className="p-2 relative">
+          </li>
+          <li className="cursor-pointer">
             <img 
-                src="../images/icons/user.svg" 
-                alt="gambar"
-                onClick={() => setShowMenu(!showMenu)} 
+              src="../images/icons/cart.svg" 
+              alt="gambar"
+              onClick={() => setShowMenu(!showMenu)}   
             />
+          </li>
+          <li className="cursor-pointer relative">
+            <img src="../images/icons/user.svg" alt="gambar" />
             {showMenu === true ? (
-                <div
-                className="flex flex-col absolute right-0 top-full w-[200px] p-3 bg-white z-10 rounded-md shadow-lg border border-gray-300 transition-all duration-500 ease-in mt-3"
-                id="menu"
-                >
+              <div className="flex flex-col absolute right-0 top-full w-[200px] p-3 bg-white z-10 rounded-md shadow-lg border border-gray-300 transition-all duration-500 ease-in mt-3">
                 <Link href="/auth">
-                    <a className="ml-3 mt-1 cursor-pointer">Login</a>
+                  <a className="ml-3 mt-1 cursor-pointer">Login</a>
                 </Link>
                 <Link href="/auth/register">
-                    <a className="ml-3 mt-1 cursor-pointer">Register</a>
+                  <a className="ml-3 mt-1 cursor-pointer">Register</a>
                 </Link>
                 <Link href="/user">
-                    <a className="ml-3 mt-1 cursor-pointer">My Account</a>
+                  <a className="ml-3 mt-1 cursor-pointer">My Account</a>
                 </Link>
-                </div>
-            ) : ""}
-          </a>
-        </div>
+              </div>
+            ) : (
+              ""
+            )}
+          </li>
+        </ul>
       </div>
     );
 }
