@@ -1,5 +1,15 @@
+import { Login, MetaData } from "../../components";
+
 const login = () => {
-    console.log('login')
-}
+    return (
+        <>
+            <MetaData 
+                title="Login to ikomers" 
+                content="Please login to ikomers" 
+            />
+            <Login />
+        </>
+    );
+};
 
 export default login;
