@@ -15,6 +15,7 @@ const Register = () => {
                   type="text"
                   className="w-full text-gray-500 outline-none bg-transparent"
                   placeholder="Email ID"
+                  required
                 />
               </div>
               <div className="flex my-5 bg-gray-200 p-5 gap-3 rounded-xl">
@@ -23,6 +24,7 @@ const Register = () => {
                   type="text"
                   className="w-full text-gray-500 outline-none bg-transparent"
                   placeholder="Full Name"
+                  required
                 />
               </div>
               <div className="flex my-5 bg-gray-200 p-5 gap-3 rounded-xl">
@@ -31,6 +33,7 @@ const Register = () => {
                   type="password"
                   className="w-full text-gray-500 outline-none bg-transparent"
                   placeholder="Phone Number"
+                  required
                 />
               </div>
               <div className="flex gap-3 my-5">
@@ -40,6 +43,7 @@ const Register = () => {
                     type="password"
                     className="w-full text-gray-500 outline-none bg-transparent"
                     placeholder="Password"
+                    required
                   />
                 </div>
                 <div className="flex bg-gray-200 p-5 gap-3 rounded-xl">
@@ -48,6 +52,7 @@ const Register = () => {
                     type="password"
                     className="w-full text-gray-500 outline-none bg-transparent"
                     placeholder="Repeat Password"
+                    required
                   />
                 </div>
               </div>

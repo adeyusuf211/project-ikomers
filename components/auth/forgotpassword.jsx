@@ -15,6 +15,7 @@ const ForgotPassword = () => {
                   type="text"
                   className="w-full text-gray-500 outline-none bg-transparent"
                   placeholder="Email ID"
+                  required
                 />
               </div>
               <button className="p-5 w-full bg-blue-600 text-white font-semibold rounded-xl my-5 text-xl shadow-lg shadow-blue-400 hover:shadow-none transition-all duration-300 ease-linear">

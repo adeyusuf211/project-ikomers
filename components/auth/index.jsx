@@ -12,9 +12,10 @@ const Login = () => {
                 <div className="flex my-5 bg-gray-200 p-5 gap-3 rounded-xl">
                   <img src="../images/icons/at.svg" alt="gambar" />
                   <input
-                    type="text"
+                    type="email"
                     className="w-full text-gray-500 outline-none bg-transparent"
                     placeholder="Email ID"
+                    required
                   />
                 </div>
                 <div className="flex my-5 bg-gray-200 p-5 gap-3 rounded-xl">
@@ -23,6 +24,7 @@ const Login = () => {
                     type="password"
                     className="w-full text-gray-500 outline-none bg-transparent"
                     placeholder="Your Password"
+                    required
                   />
                 </div>
                 <Link href="/auth/forgotpassword">
