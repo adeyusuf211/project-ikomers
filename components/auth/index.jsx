@@ -26,23 +26,22 @@ const Login = () => {
                   />
                 </div>
                 <Link href="/auth/forgotpassword">
-                    <a className="font-semibold text-blue-600 my-3">
-                        Forgot Password?
-                    </a>
+                  <a className="font-semibold text-blue-600 my-3">
+                    Forgot Password?
+                  </a>
                 </Link>
-                <button className="p-5 w-full bg-blue-600 text-white font-semibold rounded-xl my-5 text-xl shadow-lg shadow-blue-400">
+                <button className="p-5 w-full bg-blue-600 text-white font-semibold rounded-xl my-5 text-xl shadow-lg shadow-blue-400 hover:shadow-none transition-all duration-300 ease-linear">
                   Login
                 </button>
                 <h3 className="text-center text-xl">OR</h3>
                 <button className="p-5 w-full white text-gray-700 font-semibold border border-gray-800 rounded-xl my-5 text-xl shadow-lg">
                   Login with Google
                 </button>
-                <h3 className="font-semibold text-gray-800 text-center">Dont have account? {" "}
-                    <Link href="/auth/register">
-                        <a className="text-blue-600">
-                            Sign Up
-                        </a>
-                    </Link>
+                <h3 className="font-semibold text-gray-800 text-center">
+                  Dont have account?{" "}
+                  <Link href="/auth/register">
+                    <a className="text-blue-600">Sign Up</a>
+                  </Link>
                 </h3>
               </div>
             </div>
