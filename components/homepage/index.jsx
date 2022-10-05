@@ -7,7 +7,7 @@ const Homepage = () => {
         <div className="w-full lg:px-[150px] px-5 py-10">
           <Category />
 
-          <div className="w-full">
+          <div className="w-full pt-5">
             <div className="flex justify-between items-center mb-5">
               <h3 className="font-semibold text-lg text-gray-700">
                 Our best product
