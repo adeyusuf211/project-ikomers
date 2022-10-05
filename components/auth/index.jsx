@@ -1,9 +1,45 @@
 const Login = () => {
     return (
-        <>
-            <div className="w-full h-full"></div>
-        </>
-    )
+      <>
+        <div className="w-full h-full lg:flex lg:justify-center lg:items-center">
+          <div className="p-5 block">
+            <img src="../images/login.svg" alt="login" />
+            <div className="block my-10">
+              <h3 className="font-bold text-gray-800 text-3xl">Login</h3>
+              <div className="block">
+                <div className="flex my-5 bg-gray-200 p-5 gap-3 rounded-xl">
+                  <img src="../images/icons/at.svg" alt="gambar" />
+                  <input
+                    type="text"
+                    className="w-full text-gray-500 outline-none bg-transparent"
+                    placeholder="Email ID"
+                  />
+                </div>
+                <div className="flex my-5 bg-gray-200 p-5 gap-3 rounded-xl">
+                  <img src="../images/icons/key.svg" alt="gambar" />
+                  <input
+                    type="password"
+                    className="w-full text-gray-500 outline-none bg-transparent"
+                    placeholder="Your Password"
+                  />
+                </div>
+                <a href="#" className="font-semibold text-blue-600 my-3">
+                  Forgot Password?
+                </a>
+                <button className="p-5 w-full bg-blue-600 text-white font-semibold rounded-xl my-5 text-xl shadow-lg shadow-blue-400">
+                  Login
+                </button>
+                <h3 className="text-center text-xl">OR</h3>
+                <button className="p-5 w-full white text-gray-700 font-semibold border border-gray-800 rounded-xl my-5 text-xl shadow-lg">
+                  Login with Google
+                </button>
+                <h3 className="font-semibold text-gray-800 text-center">Dont have account? <a className="text-blue-600">Sign Up</a></h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </>
+    );
 }
 
 export default Login;
