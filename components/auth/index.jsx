@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const Login = () => {
     return (
       <>
@@ -23,9 +25,11 @@ const Login = () => {
                     placeholder="Your Password"
                   />
                 </div>
-                <a href="#" className="font-semibold text-blue-600 my-3">
-                  Forgot Password?
-                </a>
+                <Link href="/auth/forgotpassword">
+                    <a className="font-semibold text-blue-600 my-3">
+                        Forgot Password?
+                    </a>
+                </Link>
                 <button className="p-5 w-full bg-blue-600 text-white font-semibold rounded-xl my-5 text-xl shadow-lg shadow-blue-400">
                   Login
                 </button>
@@ -33,7 +37,13 @@ const Login = () => {
                 <button className="p-5 w-full white text-gray-700 font-semibold border border-gray-800 rounded-xl my-5 text-xl shadow-lg">
                   Login with Google
                 </button>
-                <h3 className="font-semibold text-gray-800 text-center">Dont have account? <a className="text-blue-600">Sign Up</a></h3>
+                <h3 className="font-semibold text-gray-800 text-center">Dont have account? {" "}
+                    <Link href="/auth/register">
+                        <a className="text-blue-600">
+                            Sign Up
+                        </a>
+                    </Link>
+                </h3>
               </div>
             </div>
           </div>

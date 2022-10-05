@@ -26,12 +26,15 @@ const Navbar = () => {
           <li className="cursor-pointer">
             <img 
               src="../images/icons/cart.svg" 
-              alt="gambar"
-              onClick={() => setShowMenu(!showMenu)}   
+              alt="gambar" 
             />
           </li>
           <li className="cursor-pointer relative">
-            <img src="../images/icons/user.svg" alt="gambar" />
+            <img
+              src="../images/icons/user.svg"
+              alt="gambar"
+              onClick={() => setShowMenu(!showMenu)}
+            />
             {showMenu === true ? (
               <div className="flex flex-col absolute right-0 top-full w-[200px] p-3 bg-white z-10 rounded-md shadow-lg border border-gray-300 transition-all duration-500 ease-in mt-3">
                 <Link href="/auth">
