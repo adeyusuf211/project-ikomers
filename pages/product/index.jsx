@@ -8,7 +8,6 @@ const product = () => {
         content="Product pages" 
       />
       <Navbar />
-      <Header />
       <Category />
       <Product />
     </>

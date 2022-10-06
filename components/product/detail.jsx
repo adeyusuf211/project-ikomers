@@ -2,7 +2,7 @@ import { useState } from "react";
 
 const ProductDetail = () => {
 
-  const [showModal, setShowModal] = useState(false)
+  const [showModal, setShowModal] = useState(false);
 
   return (
     <>
@@ -25,6 +25,7 @@ const ProductDetail = () => {
                 className="w-6 h-6"
               />
             </div>
+            <h3 className="my-3 font-bold text-2xl text-gray-80">Rp.300.000</h3>
             <div className="flex flex-col gap-3 mt-3">
               <div className="flex gap-3 items-center">
                 <img
@@ -69,7 +70,7 @@ const ProductDetail = () => {
               </div>
               <div className="flex gap-3 my-3">
                 <h3 className="font-semibold w-[30%]">Size: </h3>
-                <h3 className="font-bold">Big</h3>
+                <h3 className="font-bold">Big, Medium, Small</h3>
               </div>
               <div className="flex gap-3 my-3">
                 <h3 className="font-semibold w-[30%]">Status: </h3>
@@ -87,7 +88,7 @@ const ProductDetail = () => {
             </div>
             <div className="mt-10">
               <div className="flex justify-between items-center">
-                <h3 className="font-bold text-xl">Reviews</h3>
+                <h3 className="font-bold text-xl">Reviews (3021)</h3>
                 <img src="../images/icons/filter.svg" alt="icons" />
               </div>
               <div className="block my-5">
@@ -258,23 +259,38 @@ const ProductDetail = () => {
               </div>
             </div>
           </div>
-          {showModal ? (
-            <div className="fixed top-0 left-0 p-5 bg-white overflow-y-auto">
+          {/* {showModal ? (
+            <div className="fixed bottom-20 left-0 p-5 bg-white w-full">
               <div className="block">
-                <img src="../images/furniture3.jpg" alt="gambar" className="mb-3" />
-                <h3 className="font-bold text-gray-800 text-2xl">Light Lamp Yellow</h3>
-                <div className="block my-5">
-                  <h3 className="font-semibold text-gray-800 mb-2 text-lg">Size</h3>
-                  <div className="flex gap-3">
-                    <button className="px-4 py-2 bg-gray-200">Small</button>
-                    <button className="px-4 py-2 bg-gray-200">Medium</button>
-                    <button className="px-4 py-2 bg-gray-200">Big</button>
+                <div className="flex gap-3">
+                  <img src="../images/furniture3.jpg" alt="gambar" className="h-fit w-24 object-cover object-center" />
+                  <div className="block">
+                    <h3 className="font-bold text-gray-800 text-2xl mb-2">Light Lamp Yellow</h3>
+                    <div className="block">
+                      <h3 className="font-semibold text-gray-800 mb-1 text-lg">Size</h3>
+                      <div className="flex gap-2">
+                        <button className="py-2 px-4 bg-gray-200">Small</button>
+                        <button className="py-2 px-4 bg-gray-200">Medium</button>
+                        <button className="py-2 px-4 bg-gray-200">Big</button>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <h3 className="font-bold text-2xl">Rp.300.000</h3>
+                <div className="mt-10 flex justify-between items-center">
+                  <h3 className="font-bold text-2xl">Rp.300.000</h3>
+                  <div className="flex items-center gap-4">
+                    <button className="w-8 h-8 border border-gray-500">
+                      -
+                    </button>
+                    <h3 className="font-semibold text-lg">1</h3>
+                    <button className="w-8 h-8 border border-gray-500">
+                      +
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
-          ) : ""}
+          ) : ""} */}
         </div>
       </div>
     </>

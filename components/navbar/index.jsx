@@ -10,7 +10,9 @@ const Navbar = () => {
         <h3 className="font-semibold uppercase">ikomers</h3>
         <ul className="flex gap-10 lg:relative fixed bottom-0 right-0 w-full text-gray-600 justify-center items-center lg:bg-none bg-white lg:py-0 py-5 z-[9999999999999999]">
           <li>
-            <a href="#">Home</a>
+            <Link href="/">
+              <a href="#">Home</a>
+            </Link>
           </li>
           <li>
             <Link href="/product">
@@ -18,7 +20,9 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <a href="#">Blogs</a>
+            <Link href="/blog">
+              <a href="#">Blogs</a>
+            </Link>
           </li>
         </ul>
         <ul className="flex gap-5">
