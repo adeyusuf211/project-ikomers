@@ -9,7 +9,7 @@ const Login = () => {
             <div className="block my-10">
               <h3 className="font-bold text-gray-800 text-3xl">Login</h3>
               <div className="block">
-                <div className="flex my-5 bg-gray-200 p-5 gap-3 rounded-xl">
+                <div className="flex my-5 bg-gray-100 p-5 gap-3 rounded-xl">
                   <img src="../images/icons/at.svg" alt="gambar" />
                   <input
                     type="email"
@@ -18,7 +18,7 @@ const Login = () => {
                     required
                   />
                 </div>
-                <div className="flex my-5 bg-gray-200 p-5 gap-3 rounded-xl">
+                <div className="flex my-5 bg-gray-100 p-5 gap-3 rounded-xl">
                   <img src="../images/icons/key.svg" alt="gambar" />
                   <input
                     type="password"
@@ -32,11 +32,11 @@ const Login = () => {
                     Forgot Password?
                   </a>
                 </Link>
-                <button className="p-5 w-full bg-blue-600 text-white font-semibold rounded-xl my-5 text-xl shadow-lg shadow-blue-400 hover:shadow-none transition-all duration-300 ease-linear">
+                <button className="p-3 w-full bg-blue-600 text-white font-semibold rounded-xl my-5 text-xl shadow-lg shadow-blue-300 hover:shadow-none transition-all duration-300 ease-linear">
                   Login
                 </button>
                 <h3 className="text-center text-xl">OR</h3>
-                <button className="p-5 w-full white text-gray-700 font-semibold border border-gray-800 rounded-xl my-5 text-xl shadow-lg">
+                <button className="p-3 w-full white text-gray-700 font-semibold border border-gray-800 rounded-xl my-5 text-xl shadow-lg">
                   Login with Google
                 </button>
                 <h3 className="font-semibold text-gray-800 text-center">
