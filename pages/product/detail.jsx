@@ -1,5 +1,16 @@
+import { ProductDetail, MetaData, Navbar } from '../../components'
+
 const detailProduct = () => {
-  console.log("detailProduct");
+  return (
+    <>
+      <MetaData
+        title="Detail Product"
+        content="This is detail product page"
+      />
+      <Navbar />
+      <ProductDetail />
+    </>
+  )
 };
 
 export default detailProduct;
