@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const Blog = () => {
   return (
     <>
@@ -24,27 +26,33 @@ const Blog = () => {
         </div>
         <div className="block lg:mb-0 mb-20">
           <h3 className="font-semibold text-lg text-gray-800 my-3">Article For You</h3>
-          <div className="flex gap-3 bg-white p-3 my-3">
-            <img src="../images/design.jpg" alt="gambar" className="w-20 h-20 object-cover object-center" />
-            <div className="bloc">
-              <h3 className="font-bold text-gray-800">Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
-              <span className="text-sm font-medium text-gray-500 mt-2">Art and Design | 3 Weeks Ago</span>
+          <Link href="/blog/detail">
+            <div className="flex gap-3 bg-white p-3 my-3">
+              <img src="../images/design.jpg" alt="gambar" className="w-20 h-20 object-cover object-center" />
+              <div className="bloc">
+                <h3 className="font-bold text-gray-800">Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
+                <span className="text-sm font-medium text-gray-500 mt-2">Art and Design | 3 Weeks Ago</span>
+              </div>
             </div>
-          </div>
-          <div className="flex gap-3 bg-white p-3 my-3">
-            <img src="../images/art.jpg" alt="gambar" className="w-20 h-20 object-cover object-center" />
-            <div className="bloc">
-              <h3 className="font-bold text-gray-800">Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
-              <span className="text-sm font-medium text-gray-500 mt-2">Political | 2 Days Ago</span>
+          </Link>
+          <Link href="/blog/detail">
+            <div className="flex gap-3 bg-white p-3 my-3">
+              <img src="../images/art.jpg" alt="gambar" className="w-20 h-20 object-cover object-center" />
+              <div className="bloc">
+                <h3 className="font-bold text-gray-800">Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
+                <span className="text-sm font-medium text-gray-500 mt-2">Political | 2 Days Ago</span>
+              </div>
             </div>
-          </div>
-          <div className="flex gap-3 bg-white p-3 my-3">
-            <img src="../images/technology.jpg" alt="gambar" className="w-20 h-20 object-cover object-center" />
-            <div className="bloc">
-              <h3 className="font-bold text-gray-800">Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
-              <span className="text-sm font-medium text-gray-500 mt-2">Political | 2 Month Ago</span>
+          </Link>
+          <Link href="/blog/detail">
+            <div className="flex gap-3 bg-white p-3 my-3">
+              <img src="../images/technology.jpg" alt="gambar" className="w-20 h-20 object-cover object-center" />
+              <div className="bloc">
+                <h3 className="font-bold text-gray-800">Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
+                <span className="text-sm font-medium text-gray-500 mt-2">Political | 2 Month Ago</span>
+              </div>
             </div>
-          </div>
+          </Link>
         </div>
       </div>
     </>
