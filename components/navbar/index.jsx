@@ -1,37 +1,42 @@
 import Link from "next/link";
+import { useRouter } from "next/router";
 import { useState } from "react";
 
 const Navbar = () => {
+
+    const route = useRouter();
 
     const [showMenu, setShowMenu]   = useState(false);
 
     return (
       <div className="flex justify-between items-center lg:px-[150px] px-10 py-10 relative">
         <h3 className="font-semibold uppercase">ikomers</h3>
-        <ul className="flex gap-10 lg:relative fixed bottom-0 right-0 w-full text-gray-600 justify-center items-center lg:bg-none bg-white lg:py-0 py-5 z-[9999999999999999]">
+        <ul className="flex gap-10 lg:relative fixed bottom-0 right-0 w-full justify-center items-center lg:bg-none bg-white lg:py-0 py-5 z-[9999999999999999]">
           <li>
             <Link href="/">
-              <a href="#">Home</a>
+              <a href="#" className={`${route.asPath == '/' ? 'text-gray-800 font-semibold' : 'text-gray-600'}`}>Home</a>
             </Link>
           </li>
           <li>
             <Link href="/product">
-              <a href="#">Products</a>
+              <a href="#" className={`${route.asPath == '/product' ? 'text-gray-800 font-semibold' : 'text-gray-600'}`}>Products</a>
             </Link>
           </li>
           <li>
             <Link href="/blog">
-              <a href="#">Blogs</a>
+              <a href="#" className={`${route.asPath == '/blog' ? 'text-gray-800 font-semibold' : 'text-gray-600'}`}>Blogs</a>
             </Link>
           </li>
         </ul>
         <ul className="flex gap-5">
-          <li className="cursor-pointer">
-            <img 
-              src="../images/icons/cart.svg" 
-              alt="gambar" 
-            />
-          </li>
+          <Link href="/cart">
+            <li className="cursor-pointer">
+              <img 
+                src="../images/icons/cart.svg" 
+                alt="gambar" 
+              />
+            </li>
+          </Link>
           <li className="cursor-pointer relative">
             <img
               src="../images/icons/user.svg"
