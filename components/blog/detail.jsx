@@ -41,7 +41,7 @@ const BlogDetail = () => {
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus laboriosam odio itaque? Omnis est odit rem tempora quis facilis voluptates.
         </h3>
         <blockquote className="bg-white italic text-gray-700 my-3">
-          <h3 className="text-xl">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, reiciendis."</h3>
+          <h3 className="text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, reiciendis.</h3>
           <p className="font-semibold">John Doe - 2022</p>
         </blockquote>
         <h3 className="text-gray-600 text-lg font-base">
