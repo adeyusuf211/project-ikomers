@@ -27,9 +27,6 @@ const Navbar = () => {
         </ul>
         <ul className="flex gap-5">
           <li className="cursor-pointer">
-            <img src="../images/icons/search.svg" alt="gambar" />
-          </li>
-          <li className="cursor-pointer">
             <img 
               src="../images/icons/cart.svg" 
               alt="gambar" 
