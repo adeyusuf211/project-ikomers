@@ -4,10 +4,10 @@ import Link from 'next/link';
 const Homepage = () => {
     return (
       <>
-        <div className="w-full lg:px-[150px] px-5 py-10">
+        <div className="w-full lg:px-[150px] px-5 py-10 bg-gray-100">
           <Category />
 
-          <div className="w-full pt-5">
+          <div className="w-full pt-5 bg-white">
             <div className="flex justify-between items-center mb-5">
               <h3 className="font-semibold text-lg text-gray-700">
                 Our best product

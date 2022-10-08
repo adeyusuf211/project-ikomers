@@ -3,7 +3,15 @@ import Link from "next/link";
 const Product = () => {
   return (
     <>
-      <div className="px-5 lg:[px-150px] py-5">
+      <div className="px-5 lg:[px-150px] py-5 bg-gray-100">
+        <div className="flex justify-between gap-3 p-5 rounded-xl bg-white mb-5">
+          <input
+            type="text"
+            className="w-full bg-transparent outline-none"
+            placeholder="search article..."
+          />
+          <img src="../images/icons/search.svg" alt="gambar" />
+        </div>
         <div className="flex justify-between items-center">
           <h3 className="font-semibold text-gray-800">Latest Product</h3>
           <div className="flex gap-3 items-center">
@@ -39,7 +47,9 @@ const Product = () => {
                       alt="icon"
                       className="w-4"
                     />
-                    <span className="font-medium text-gray-700 text-sm">500</span>
+                    <span className="font-medium text-gray-700 text-sm">
+                      500
+                    </span>
                   </div>
                 </div>
               </div>
@@ -70,7 +80,9 @@ const Product = () => {
                       alt="icon"
                       className="w-4"
                     />
-                    <span className="font-medium text-gray-700 text-sm">300</span>
+                    <span className="font-medium text-gray-700 text-sm">
+                      300
+                    </span>
                   </div>
                 </div>
               </div>
@@ -101,7 +113,9 @@ const Product = () => {
                       alt="icon"
                       className="w-4"
                     />
-                    <span className="font-medium text-gray-700 text-sm">500</span>
+                    <span className="font-medium text-gray-700 text-sm">
+                      500
+                    </span>
                   </div>
                 </div>
               </div>
@@ -132,7 +146,9 @@ const Product = () => {
                       alt="icon"
                       className="w-4"
                     />
-                    <span className="font-medium text-gray-700 text-sm">300</span>
+                    <span className="font-medium text-gray-700 text-sm">
+                      300
+                    </span>
                   </div>
                 </div>
               </div>
