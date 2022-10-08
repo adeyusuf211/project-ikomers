@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const Cart = () => {
   return (
     <>
@@ -94,7 +96,9 @@ const Cart = () => {
         </div>
         <div className="flex justify-between items-center bg-white p-5">
           <h3 className="font-bold text-gray-800 text-xl">Rp.300.000</h3>
-          <button className="px-4 py-2 font-medium bg-red-500 text-white text-xl">Checkout</button>
+          <Link href="/checkout">
+            <button className="px-4 py-2 font-medium bg-red-500 text-white text-xl">Checkout</button>
+          </Link>
         </div>
       </div>
     </>
