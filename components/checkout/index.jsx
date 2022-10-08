@@ -48,7 +48,7 @@ const Checkout = () => {
             </div>
           </div>
         </div>
-        <div className="block mb-5 bg-white p-3">
+        <div className="block mb-5 bg-white p-5">
           <div className="flex justify-between my-1">
             <h3 className="text-md font-medium text-gray-500">Product:</h3>
             <h3 className="text-sm font-medium text-gray-700">Lorem ipsum dolor sit amet.</h3>
