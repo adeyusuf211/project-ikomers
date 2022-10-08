@@ -10,7 +10,9 @@ const Navbar = () => {
 
     return (
       <div className="flex justify-between items-center lg:px-[150px] px-10 py-10 relative">
-        <h3 className="font-semibold uppercase">ikomers</h3>
+        <Link href="/">
+          <h3 className="font-semibold uppercase">ikomers</h3>
+        </Link>
         <ul className="flex gap-10 lg:relative fixed bottom-0 right-0 w-full justify-center items-center lg:bg-none bg-white lg:py-0 py-5 z-[9999999999999999]">
           <li>
             <Link href="/">

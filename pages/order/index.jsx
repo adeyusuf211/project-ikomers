@@ -1,5 +1,17 @@
+import { MetaData, Navbar, Order, SubHeader } from '../../components'
+
 const order = () => {
-  console.log("order");
+  return (
+    <>
+      <MetaData 
+        title="YOur Order"
+        content="Order pages"
+      />
+      <Navbar />
+      <SubHeader title="Order" />
+      <Order />
+    </>
+  )
 };
 
 export default order;

@@ -13,9 +13,7 @@ const Homepage = () => {
                 Our best product
               </h3>
               <Link href="/product">
-                <a className="font-semibold text-blue-500">
-                    View all
-                </a>
+                <a className="font-semibold text-blue-500">View all</a>
               </Link>
             </div>
             <div className="grid grid-cols-2 gap-3">
@@ -152,12 +150,12 @@ const Homepage = () => {
                 </div>
               </div>
             </div>
-            <div className="my-3 flex gap-3 bg-blue-400 p-5 rounded-lg">
+            <div className="my-3 flex gap-3 bg-blue-200 p-5 rounded-lg lg:mb-0 mb-20">
               <div className="block w-[70%]">
-                <h3 className="text-blue-800 text-lg font-bold">
+                <h3 className="text-blue-600 text-lg font-bold">
                   Get discount up to 70% for all furniture
                 </h3>
-                <button className="px-4 py-2 rounded-lg font-medium bg-blue-600 text-blue-300 mt-2">
+                <button className="px-4 py-2 rounded-lg font-medium bg-blue-500 text-blue-100 mt-2">
                   Get Now
                 </button>
               </div>
@@ -173,9 +171,7 @@ const Homepage = () => {
                   Our best article
                 </h3>
                 <Link href="/blogs">
-                    <a className="font-semibold text-blue-500">
-                        View all
-                    </a>
+                  <a className="font-semibold text-blue-500">View all</a>
                 </Link>
               </div>
               <div className="block">

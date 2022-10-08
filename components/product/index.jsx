@@ -142,12 +142,12 @@ const Product = () => {
         <div className="block lg:mb-0 mb-5">
           <h3 className="font-semibold text-gray-800 mb-5">Latest Viewed</h3>
           <div className="lg:overflow-y-hidden overflow-y-auto flex gap-3">
-            <div className="relative">
+            <div className="relative shrink-0 w-52 h-fit">
               <div className="relative">
                 <img
                   src="../images/furniture1.jpg"
                   alt="product"
-                  className="rounded-2xl w-full"
+                  className="rounded-2xl w-full h-full"
                 />
                 <span className="absolute top-3 left-3 text-gray-700 text-sm">
                   Furniture
@@ -173,12 +173,12 @@ const Product = () => {
                 </div>
               </div>
             </div>
-            <div className="relative">
+            <div className="relative shrink-0 w-52 h-fit">
               <div className="relative">
                 <img
-                  src="../images/furniture1.jpg"
+                  src="../images/furniture2.jpg"
                   alt="product"
-                  className="rounded-2xl w-full"
+                  className="rounded-2xl w-full h-full"
                 />
                 <span className="absolute top-3 left-3 text-gray-700 text-sm">
                   Furniture
@@ -186,7 +186,7 @@ const Product = () => {
               </div>
               <div className="py-5 px-2">
                 <span className="text-sm text-gray-600">campuranstore</span>
-                <h3 className="font-bold text-xl text-gray-800">Rp.200.000</h3>
+                <h3 className="font-bold text-xl text-gray-800">Rp.500.000</h3>
                 <div className="flex justify-between items-center mt-3">
                   <a href="#" className="text-blue-500 font-semibold text-sm">
                     Add to cart
@@ -198,19 +198,50 @@ const Product = () => {
                       className="w-4"
                     />
                     <span className="font-medium text-gray-700 text-sm">
-                      500
+                      400
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="relative shrink-0 w-52 h-fit">
+              <div className="relative">
+                <img
+                  src="../images/furniture3.jpg"
+                  alt="product"
+                  className="rounded-2xl w-full h-full"
+                />
+                <span className="absolute top-3 left-3 text-gray-700 text-sm">
+                  Furniture
+                </span>
+              </div>
+              <div className="py-5 px-2">
+                <span className="text-sm text-gray-600">campuranstore</span>
+                <h3 className="font-bold text-xl text-gray-800">Rp.400.000</h3>
+                <div className="flex justify-between items-center mt-3">
+                  <a href="#" className="text-blue-500 font-semibold text-sm">
+                    Add to cart
+                  </a>
+                  <div className="flex items-center gap-1">
+                    <img
+                      src="../images/icons/love.svg"
+                      alt="icon"
+                      className="w-4"
+                    />
+                    <span className="font-medium text-gray-700 text-sm">
+                      700
                     </span>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div className="my-3 flex gap-3 bg-blue-400 p-5 rounded-lg lg:mb-0 mb-20">
+          <div className="my-3 flex gap-3 bg-blue-200 p-5 rounded-lg lg:mb-0 mb-20">
             <div className="block w-[70%]">
-              <h3 className="text-blue-800 text-lg font-bold">
+              <h3 className="text-blue-600 text-lg font-bold">
                 Get discount up to 70% for all furniture
               </h3>
-              <button className="px-4 py-2 rounded-lg font-medium bg-blue-600 text-blue-300 mt-2">
+              <button className="px-4 py-2 rounded-lg font-medium bg-blue-500 text-blue-100 mt-2">
                 Get Now
               </button>
             </div>
