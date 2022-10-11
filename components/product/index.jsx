@@ -257,7 +257,7 @@ const Product = () => {
               <h3 className="text-blue-600 text-lg font-bold">
                 Get discount up to 70% for all furniture
               </h3>
-              <button className="px-4 py-2 rounded-lg font-medium bg-blue-500 text-blue-100 mt-2">
+              <button className="px-4 py-2 font-medium bg-blue-500 text-blue-100 mt-2 shadow-lg shadow-blue-300 hover:shadow-none transition-all duration-500 ease-linear">
                 Get Now
               </button>
             </div>
