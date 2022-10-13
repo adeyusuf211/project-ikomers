@@ -7,11 +7,11 @@ const ProductDetail = () => {
   return (
     <>
       <div className="w-full h-full px-5 lg:px-[150px] mb-20">
-        <div className="lg:flex lg:gap-10 block">
+        <div className="lg:flex lg:gap-10 block relative">
           <img
             src="../images/furniture3.jpg"
             alt="gambar"
-            className="flex object-cover object-center rounded-xl lg:rounded-none lg:w-[50%] lg:h-full"
+            className="object-cover object-center rounded-xl lg:rounded-none lg:w-[30%] lg:h-full lg:sticky lg:top-5"
           />
           <div className="block my-5">
             <span className="text-sm text-blue-600 font-semibold">

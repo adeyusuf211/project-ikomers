@@ -150,7 +150,7 @@ const Homepage = () => {
                 </div>
               </div>
             </div>
-            <div className="my-5 flex gap-3 bg-blue-200 p-5 rounded-lg lg:mb-0 mb-20">
+            <div className="my-10 flex gap-3 bg-blue-200 p-5 rounded-lg">
               <div className="block w-full lg:py-5 text-center">
                 <h3 className="text-blue-600 text-lg lg:text-4xl font-bold lg:mb-2">
                   Get discount up to 70% for all furniture
@@ -174,48 +174,48 @@ const Homepage = () => {
                   <img
                     src="../images/art.jpg"
                     alt="gambar"
-                    className="h-20 w-20 object-cover object-center rounded-lg"
+                    className="lg:w-40 lg:h-40 h-20 w-20 object-cover object-center rounded-lg"
                   />
                   <div className="flex flex-col gap-1">
-                    <h3 className="font-semibold text-gray-800">
+                    <h3 className="font-semibold text-gray-800 lg:text-4xl">
                       Lorem ipsum dolor sit amet...
                     </h3>
-                    <h4 className="font-medium text-gray-600">
+                    <h4 className="font-medium text-gray-600 lg:text-2xl">
                       Oct 04, 2022 - John Doe
                     </h4>
-                    <h5 className="font-medium text-blue-600">#art</h5>
+                    <h5 className="font-medium text-blue-600 lg:text-xl">#art</h5>
                   </div>
                 </div>
                 <div className="flex gap-3 mt-5">
                   <img
                     src="../images/design.jpg"
                     alt="gambar"
-                    className="h-20 w-20 object-cover object-center rounded-lg"
+                    className="lg:w-40 lg:h-40 h-20 w-20 object-cover object-center rounded-lg"
                   />
                   <div className="flex flex-col gap-1">
-                    <h3 className="font-semibold text-gray-800">
+                    <h3 className="font-semibold text-gray-800 lg:text-4xl">
                       Lorem ipsum dolor sit amet...
                     </h3>
-                    <h4 className="font-medium text-gray-600">
+                    <h4 className="font-medium text-gray-600 lg:text-2xl">
                       Oct 04, 2022 - John Doe
                     </h4>
-                    <h5 className="font-medium text-blue-600">#design</h5>
+                    <h5 className="font-medium text-blue-600 lg:text-xl">#design</h5>
                   </div>
                 </div>
                 <div className="flex gap-3 mt-5">
                   <img
                     src="../images/technology.jpg"
                     alt="gambar"
-                    className="h-20 w-20 object-cover object-center rounded-lg"
+                    className="lg:w-40 lg:h-40 h-20 w-20 object-cover object-center rounded-lg"
                   />
                   <div className="flex flex-col gap-1">
-                    <h3 className="font-semibold text-gray-800">
+                    <h3 className="font-semibold text-gray-800 lg:text-4xl">
                       Lorem ipsum dolor sit amet...
                     </h3>
-                    <h4 className="font-medium text-gray-600">
+                    <h4 className="font-medium text-gray-600 lg:text-2xl">
                       Oct 04, 2022 - John Doe
                     </h4>
-                    <h5 className="font-medium text-blue-600">#technology</h5>
+                    <h5 className="font-medium text-blue-600 lg:text-xl">#technology</h5>
                   </div>
                 </div>
               </div>
