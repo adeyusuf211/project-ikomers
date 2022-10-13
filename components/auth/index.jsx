@@ -3,13 +3,13 @@ import Link from "next/link";
 const Login = () => {
     return (
       <>
-        <div className="w-full h-full lg:flex lg:justify-center lg:items-center">
+        <div className="w-full h-full lg:flex lg:justify-center lg:items-center lg:px-[100px] lg:bg-gray-100 bg-white">
           <div className="p-5 flex flex-col lg:flex-row lg:items-center lg:gap-20">
             <img src="../images/login.svg" alt="login" className="lg:w-[50%] lg:h-full" />
-            <div className="block my-10 w-full">
+            <div className="block my-10 w-full lg:bg-white lg:p-10">
               <h3 className="font-bold text-gray-800 text-3xl">Login</h3>
               <div className="block">
-                <div className="flex my-5 bg-gray-100 p-5 gap-3 rounded-xl">
+                <div className="flex my-5 border border-gray-400 p-5 gap-3 rounded-xl">
                   <img src="../images/icons/at.svg" alt="gambar" />
                   <input
                     type="email"
@@ -18,7 +18,7 @@ const Login = () => {
                     required
                   />
                 </div>
-                <div className="flex my-5 bg-gray-100 p-5 gap-3 rounded-xl">
+                <div className="flex my-5 border border-gray-400 p-5 gap-3 rounded-xl">
                   <img src="../images/icons/key.svg" alt="gambar" />
                   <input
                     type="password"
