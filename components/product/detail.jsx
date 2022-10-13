@@ -11,7 +11,7 @@ const ProductDetail = () => {
           <img
             src="../images/furniture3.jpg"
             alt="gambar"
-            className="flex object-cover object-center rounded-xl lg:rounded-none"
+            className="flex object-cover object-center rounded-xl lg:rounded-none lg:w-[50%] lg:h-full"
           />
           <div className="block my-5">
             <span className="text-sm text-blue-600 font-semibold">

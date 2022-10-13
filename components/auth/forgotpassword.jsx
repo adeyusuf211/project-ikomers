@@ -3,10 +3,10 @@ import Link from "next/link";
 const ForgotPassword = () => {
   return (
     <>
-      <div className="w-full h-full lg:flex lg:justify-center lg:items-center">
-        <div className="p-5 block">
-          <img src="../images/forgot-password.svg" alt="login" />
-          <div className="block my-10">
+      <div className="w-full lg:min-h-screen h-full lg:flex lg:justify-center lg:items-center">
+        <div className="p-5 flex flex-col lg:flex-row lg:items-center lg:gap-20">
+          <img src="../images/forgot-password.svg" alt="login" className="lg:w-[50%]" />
+          <div className="block my-10 lg:w-full">
             <h3 className="font-bold text-gray-800 text-3xl">
               Forgot Password
             </h3>

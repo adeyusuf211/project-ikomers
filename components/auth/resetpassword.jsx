@@ -1,10 +1,10 @@
 const ResetPassword = () => {
     return (
       <>
-        <div className="w-full h-full lg:flex lg:justify-center lg:items-center">
-          <div className="p-5 block">
-            <img src="../images/change.svg" alt="login" />
-            <div className="block my-10">
+        <div className="w-full lg:min-h-screen h-full lg:flex lg:justify-center lg:items-center">
+          <div className="p-5 flex flex-col lg:flex-row lg:items-center lg:gap-20">
+            <img src="../images/change.svg" alt="login" className="lg:w-[50%]" />
+            <div className="block my-10 w-full">
               <h3 className="font-bold text-gray-800 text-3xl">
                 Reset Password
               </h3>

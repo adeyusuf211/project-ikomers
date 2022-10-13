@@ -4,9 +4,9 @@ const Login = () => {
     return (
       <>
         <div className="w-full h-full lg:flex lg:justify-center lg:items-center">
-          <div className="p-5 block">
-            <img src="../images/login.svg" alt="login" />
-            <div className="block my-10">
+          <div className="p-5 flex flex-col lg:flex-row lg:items-center lg:gap-20">
+            <img src="../images/login.svg" alt="login" className="lg:w-[50%] lg:h-full" />
+            <div className="block my-10 w-full">
               <h3 className="font-bold text-gray-800 text-3xl">Login</h3>
               <div className="block">
                 <div className="flex my-5 bg-gray-100 p-5 gap-3 rounded-xl">
