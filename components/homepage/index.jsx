@@ -7,16 +7,16 @@ const Homepage = () => {
         <div className="w-full lg:px-[150px] px-5 py-10 bg-gray-100">
           <Category />
 
-          <div className="w-full pt-5 bg-white">
+          <div className="w-full pt-5">
             <div className="flex justify-between items-center mb-5">
-              <h3 className="font-semibold text-lg text-gray-700">
+              <h3 className="font-semibold text-lg lg:text-2xl text-gray-700">
                 Our best product
               </h3>
               <Link href="/product">
                 <a className="font-semibold text-blue-500">View all</a>
               </Link>
             </div>
-            <div className="grid grid-cols-2 gap-3">
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-3">
               <div className="relative">
                 <div className="relative">
                   <img
@@ -29,7 +29,7 @@ const Homepage = () => {
                   </span>
                 </div>
                 <div className="py-5 px-2">
-                  <span className="text-sm text-gray-600">campuranstore</span>
+                  <span className="text-sm text-gray-600">Lorem ipsum dolor sit amet.</span>
                   <h3 className="font-bold text-xl text-gray-800">
                     Rp.300.000
                   </h3>
@@ -62,7 +62,7 @@ const Homepage = () => {
                   </span>
                 </div>
                 <div className="py-5 px-2">
-                  <span className="text-sm text-gray-600">campuranstore</span>
+                  <span className="text-sm text-gray-600">Lorem ipsum dolor sit amet.</span>
                   <h3 className="font-bold text-xl text-gray-800">
                     Rp.500.000
                   </h3>
@@ -95,7 +95,7 @@ const Homepage = () => {
                   </span>
                 </div>
                 <div className="py-5 px-2">
-                  <span className="text-sm text-gray-600">campuranstore</span>
+                  <span className="text-sm text-gray-600">Lorem ipsum dolor sit amet.</span>
                   <h3 className="font-bold text-xl text-gray-800">
                     Rp.300.000
                   </h3>
@@ -128,7 +128,7 @@ const Homepage = () => {
                   </span>
                 </div>
                 <div className="py-5 px-2">
-                  <span className="text-sm text-gray-600">campuranstore</span>
+                  <span className="text-sm text-gray-600">Lorem ipsum dolor sit amet.</span>
                   <h3 className="font-bold text-xl text-gray-800">
                     Rp.500.000
                   </h3>
@@ -150,24 +150,19 @@ const Homepage = () => {
                 </div>
               </div>
             </div>
-            <div className="my-3 flex gap-3 bg-blue-200 p-5 rounded-lg lg:mb-0 mb-20">
-              <div className="block w-[70%]">
-                <h3 className="text-blue-600 text-lg font-bold">
+            <div className="my-5 flex gap-3 bg-blue-200 p-5 rounded-lg lg:mb-0 mb-20">
+              <div className="block w-full lg:py-5 text-center">
+                <h3 className="text-blue-600 text-lg lg:text-4xl font-bold lg:mb-2">
                   Get discount up to 70% for all furniture
                 </h3>
                 <button className="px-4 py-2 font-medium bg-blue-500 text-blue-100 mt-2 shadow-lg shadow-blue-300 hover:shadow-none transition-all duration-500 ease-linear">
                   Get Now
                 </button>
               </div>
-              <img
-                src="../images/furniture-nobg.png"
-                className="h-full w-20"
-                alt="gambar"
-              />
             </div>
             <div className="relative mb-20">
               <div className="flex justify-between mt-5">
-                <h3 className="font-semibold text-lg text-gray-700">
+                <h3 className="font-semibold text-lg lg:text-2xl text-gray-700">
                   Our best article
                 </h3>
                 <Link href="/blogs">
