@@ -24,6 +24,7 @@ const Checkout = () => {
               </small>
             </div>
           </div>
+          <hr className="w-full border-2 border-dashed border-green-600 my-5" />
           <div className="block my-5">
             <div className="flex justify-between my-3">
               <h3 className="font-semibold text-xl text-gray-800">Shipping</h3>
@@ -79,7 +80,7 @@ const Checkout = () => {
             <h3 className="text-md font-semibold text-gray-700">Rp.315.500</h3>
           </div>
         </div>
-        <div className="flex justify-between items-center bg-gray-200 p-5">
+        <div className="flex justify-between items-center bg-white p-5">
           <h3 className="text-xl font-semibold text-gray-80">Rp.315.500</h3>
           <Link href="/order">
             <button className="px-6 py-2 font-semibold bg-red-500 text-white shadow-lg shadow-red-300 hvoer:shadow-none transition-all duration-300 ease-linear">Order</button>
