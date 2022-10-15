@@ -22,61 +22,99 @@ const User = () => {
             </div>
           </div>
           <div className="w-full h-full flex gap-3 my-3">
-            <div className="bg-white p-5 block lg:w-[30%] w-full">
-              <h3 className="font-semibold text-gray-800 my-2">
-                My Account
-              </h3>
-              <h3 className="font-semibold text-gray-800 my-2">
-                My Order
-              </h3>
-              <h3 className="font-semibold text-gray-800 my-2">
-                Notification
-              </h3>
-              <h3 className="font-semibold text-gray-800 my-2">
-                My Voucher
-              </h3>
+            <div className="bg-white p-5 block lg:w-[30%] w-full h-full">
+              <h3 className="font-semibold text-gray-800 my-2">My Account</h3>
+              <h3 className="font-semibold text-gray-800 my-2">My Order</h3>
+              <h3 className="font-semibold text-gray-800 my-2">Notification</h3>
+              <h3 className="font-semibold text-gray-800 my-2">My Voucher</h3>
             </div>
             <div className="bg-white p-5 w-full h-full block">
-              <div className="block">
-                <h3 className="font-semibold text-gray-800">
-                  My Profile
-                </h3>
-                <p className="text-gray-500 text-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod, eveniet.</p>
-              </div>
-              <div className="flex gap-5 my-5">
-                <div className="block w-full">
-                  <div className="flex my-2">
-                    <h4 className="font-medium text-gray-600 w-[20%]">Username:</h4>
-                    <h3 className="font-semibold text-gray-800">johndoe</h3>
-                  </div>
-                  <div className="flex my-2">
-                    <h4 className="font-medium text-gray-600 w-[20%]">Full Name:</h4>
-                    <h3 className="font-semibold text-gray-800">John Doe</h3>
-                  </div>
-                  <div className="flex my-2">
-                    <h4 className="font-medium text-gray-600 w-[20%]">Email:</h4>
-                    <h3 className="font-semibold text-gray-800">jo******@gmail.com</h3>
-                  </div>
-                  <div className="flex my-2">
-                    <h4 className="font-medium text-gray-600 w-[20%]">Telp:</h4>
-                    <h3 className="font-semibold text-gray-800">**********393</h3>
-                  </div>
-                  <div className="flex my-2">
-                    <h4 className="font-medium text-gray-600 w-[20%]">Gender:</h4>
-                    <h3 className="font-semibold text-gray-800">Man</h3>
-                  </div>
-                  <div className="flex my-2">
-                    <h4 className="font-medium text-gray-600 w-[20%]">Birth Date:</h4>
-                    <h3 className="font-semibold text-gray-800">01/02/1987</h3>
-                  </div>
-                  <div className="flex my-2">
-                    <h4 className="font-medium text-gray-600 w-[20%]"></h4>
-                    <button className="px-4 py-2 bg-red-500 text-white font-medium">Save</button>
-                  </div>
+              <div className="flex gap-3">
+                <div className="py-2 mr-10 border-b-2 border-blue-600 cursor-pointer">
+                  <h3 className="font-semibold text-md text-blue-600">Profile</h3>
                 </div>
-                <div className="flex flex-col items-center w-[30%] gap-5">
-                  <img src="../images/design.jpg" alt="gambar" className="w-40 h-40 rounded-full object-cover object-center" />
-                  <button type="button" className="py-2 px-4 border border-gray-700">Select Image</button>
+                <div className="py-2 mr-10">
+                  <h3 className="font-semibold text-md text-gray-500 cursor-pointer">Payment</h3>
+                </div>
+                <div className="py-2 mr-10">
+                  <h3 className="font-semibold text-md text-gray-500 cursor-pointer">Address</h3>
+                </div>
+                <div className="py-2 mr-10">
+                  <h3 className="font-semibold text-md text-gray-500 cursor-pointer">Password</h3>
+                </div>
+              </div>
+              <div className="block my-5">
+                <h3 className="font-semibold text-gray-800">My Profile</h3>
+                <p className="text-gray-500 text-sm">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Quod, eveniet.
+                </p>
+              </div>
+              <div className="relative">
+                <div className="flex gap-5 my-5">
+                  <div className="block w-full">
+                    <div className="flex my-2">
+                      <h4 className="font-medium text-gray-600 w-[30%]">
+                        Username:
+                      </h4>
+                      <h3 className="font-semibold text-gray-800">johndoe</h3>
+                    </div>
+                    <div className="flex my-2">
+                      <h4 className="font-medium text-gray-600 w-[30%]">
+                        Full Name:
+                      </h4>
+                      <h3 className="font-semibold text-gray-800">John Doe</h3>
+                    </div>
+                    <div className="flex my-2">
+                      <h4 className="font-medium text-gray-600 w-[30%]">
+                        Email:
+                      </h4>
+                      <h3 className="font-semibold text-gray-800">
+                        jo******@gmail.com
+                      </h3>
+                    </div>
+                    <div className="flex my-2">
+                      <h4 className="font-medium text-gray-600 w-[30%]">
+                        Telp:
+                      </h4>
+                      <h3 className="font-semibold text-gray-800">
+                        **********393
+                      </h3>
+                    </div>
+                    <div className="flex my-2">
+                      <h4 className="font-medium text-gray-600 w-[30%]">
+                        Gender:
+                      </h4>
+                      <h3 className="font-semibold text-gray-800">Man</h3>
+                    </div>
+                    <div className="flex my-2">
+                      <h4 className="font-medium text-gray-600 w-[30%]">
+                        Birth Date:
+                      </h4>
+                      <h3 className="font-semibold text-gray-800">
+                        01/02/1987
+                      </h3>
+                    </div>
+                    <div className="flex my-2">
+                      <h4 className="font-medium text-gray-600 w-[30%]"></h4>
+                      <button className="px-4 py-1 bg-red-500 text-white font-medium shadow-lg shadow-red-300 hover:shadow-none transition-all duration-300 ease-linear">
+                        Save
+                      </button>
+                    </div>
+                  </div>
+                  <div className="flex flex-col items-center w-[30%] gap-5">
+                    <img
+                      src="../images/design.jpg"
+                      alt="gambar"
+                      className="w-40 h-40 rounded-full object-cover object-center"
+                    />
+                    <button
+                      type="button"
+                      className="py-2 px-4 border border-gray-700"
+                    >
+                      Select Image
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
