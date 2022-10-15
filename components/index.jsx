@@ -19,4 +19,4 @@ export { default as Product } from "./product";
 export { default as ProductDetail } from "./product/detail";
 export { default as SubHeader } from "./subheader";
 export { default as User } from "./user";
-export { default as Profile } from "./user/profile";
+export { default as Payment } from "./user/payment";

@@ -1,7 +1,9 @@
+import Link from "next/link";
 import { useState } from "react";
+import { useRouter } from "next/router";
 
 const User = () => {
-
+  const router = useRouter();
   const [showModal, setShowModal] = useState(false);
 
   return (
@@ -30,17 +32,39 @@ const User = () => {
             </div>
             <div className="bg-white p-5 w-full h-full block">
               <div className="flex gap-3">
-                <div className="py-2 mr-10 border-b-2 border-blue-600 cursor-pointer">
-                  <h3 className="font-semibold text-md text-blue-600">Profile</h3>
+                <Link href="/user">
+                  <div
+                    className={`py-2 mr-10 ${
+                      router.asPath == "/user"
+                        ? "border-b-2 border-blue-600"
+                        : ""
+                    } cursor-pointer`}
+                  >
+                    <h3
+                      className={`font-semibold text-md ${
+                        router.asPath == "/user" ? "text-blue-600" : "text-gray-500"
+                      }`}
+                    >
+                      Profile
+                    </h3>
+                  </div>
+                </Link>
+                <Link href="/user/payment">
+                  <div className="py-2 mr-10">
+                    <h3 className="font-semibold text-md text-gray-500 cursor-pointer">
+                      Payment
+                    </h3>
+                  </div>
+                </Link>
+                <div className="py-2 mr-10">
+                  <h3 className="font-semibold text-md text-gray-500 cursor-pointer">
+                    Address
+                  </h3>
                 </div>
                 <div className="py-2 mr-10">
-                  <h3 className="font-semibold text-md text-gray-500 cursor-pointer">Payment</h3>
-                </div>
-                <div className="py-2 mr-10">
-                  <h3 className="font-semibold text-md text-gray-500 cursor-pointer">Address</h3>
-                </div>
-                <div className="py-2 mr-10">
-                  <h3 className="font-semibold text-md text-gray-500 cursor-pointer">Password</h3>
+                  <h3 className="font-semibold text-md text-gray-500 cursor-pointer">
+                    Password
+                  </h3>
                 </div>
               </div>
               <div className="block my-5">
