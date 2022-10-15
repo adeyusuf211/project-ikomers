@@ -132,14 +132,14 @@ const ProductDetail = () => {
             </div>
             <div className="block">
               <h3 className="font-bold text-lg text-gray-600">Voucher</h3>
-              <div className="flex gap-3 mt-2">
-                <div className="font-semibold text-2xl text-green-600 border-2 border-green-500 p-10">
+              <div className="flex gap-3 mt-2 lg:overflow-x-hidden overflow-x-auto">
+                <div className="font-semibold text-sm lg:text-2xl text-green-600 border-2 border-green-500 lg:p-10 p-4">
                   Voucher 1
                 </div>
-                <div className="font-semibold text-2xl text-gray-600 border-2 border-gray-600 p-10">
+                <div className="font-semibold text-sm lg:text-2xl text-gray-600 border-2 border-gray-600 lg:p-10 p-4">
                   Voucher 2
                 </div>
-                <div className="font-semibold text-2xl text-gray-600 border-2 border-gray-600 p-10">
+                <div className="font-semibold text-sm lg:text-2xl text-gray-600 border-2 border-gray-600 lg:p-10 p-4">
                   Voucher 3
                 </div>
               </div>
