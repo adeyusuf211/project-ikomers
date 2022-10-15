@@ -213,36 +213,36 @@ const ProductDetail = () => {
                   className="w-4 h-4"
                 />
               </div>
-              <div className="flex gap-4">
+              <div className="flex gap-3">
                 <img
                   src="../images/art.jpg"
                   alt="gambar"
                   className="w-10 h-10 rounded-full object-cover object-center"
                 />
-                <div className="flex flex-col gap-3">
+                <div className="flex flex-col">
                   <h3 className="font-bold text-gray-800">John Doe</h3>
-                  <p className="font-medium text-gray-600">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Ad, magni?
-                  </p>
+                  <p className="font-medium text-sm text-gray-600">member classic</p>
                 </div>
               </div>
-              <div className="flex gap-2 my-3 ml-14">
-                <img
-                  src="../images/design.jpg"
-                  alt="gambar"
-                  className="w-20 h-20"
-                />
-                <img
-                  src="../images/technology.jpg"
-                  alt="gambar"
-                  className="w-20 h-20"
-                />
-                <img
-                  src="../images/furniture1.jpg"
-                  alt="gambar"
-                  className="w-20 h-20"
-                />
+              <div className="flex flex-col">
+                <p className="font-medium text-sm text-gray-500 my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, dolore. Obcaecati a minima, dolorum nesciunt repellat magni facere excepturi corrupti placeat, illum delectus. Maxime qui expedita modi architecto omnis nobis!</p>
+                <div className="flex gap-2 my-3">
+                  <img
+                    src="../images/design.jpg"
+                    alt="gambar"
+                    className="w-20 h-20"
+                  />
+                  <img
+                    src="../images/technology.jpg"
+                    alt="gambar"
+                    className="w-20 h-20"
+                  />
+                  <img
+                    src="../images/furniture1.jpg"
+                    alt="gambar"
+                    className="w-20 h-20"
+                  />
+                </div>
               </div>
             </div>
             <div className="block my-5">
@@ -273,31 +273,31 @@ const ProductDetail = () => {
                   className="w-4 h-4"
                 />
               </div>
-              <div className="flex gap-4">
+              <div className="flex gap-3">
                 <img
                   src="../images/banner.jpg"
                   alt="gambar"
                   className="w-10 h-10 rounded-full object-cover object-center"
                 />
-                <div className="flex flex-col gap-3">
+                <div className="flex flex-col">
                   <h3 className="font-bold text-gray-800">John Pret</h3>
-                  <p className="font-medium text-gray-600">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Officiis amet adipisci non cumque voluptatum exercitationem.
-                  </p>
+                  <p className="font-medium text-sm text-gray-600">member classic</p>
                 </div>
               </div>
-              <div className="flex gap-2 my-3 ml-14">
-                <img
-                  src="../images/design.jpg"
-                  alt="gambar"
-                  className="w-20 h-20"
-                />
-                <img
-                  src="../images/technology.jpg"
-                  alt="gambar"
-                  className="w-20 h-20"
-                />
+              <div className="flex flex-col">
+                <p className="font-medium text-sm text-gray-500 my-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam quia repellendus sequi! Aliquam perferendis provident obcaecati quisquam, ab impedit dolorem culpa pariatur animi repellendus doloremque dolorum nam voluptatibus veniam quo ratione sit deserunt beatae modi ducimus! Omnis soluta vel debitis laboriosam eaque, ratione autem magni. Expedita voluptatum dolor consequatur ea!</p>
+                <div className="flex gap-2 my-3">
+                  <img
+                    src="../images/design.jpg"
+                    alt="gambar"
+                    className="w-20 h-20"
+                  />
+                  <img
+                    src="../images/technology.jpg"
+                    alt="gambar"
+                    className="w-20 h-20"
+                  />
+                </div>
               </div>
             </div>
           </div>
