@@ -42,7 +42,9 @@ const User = () => {
                   >
                     <h3
                       className={`font-semibold text-md ${
-                        router.asPath == "/user" ? "text-blue-600" : "text-gray-500"
+                        router.asPath == "/user"
+                          ? "text-blue-600"
+                          : "text-gray-500"
                       }`}
                     >
                       Profile
@@ -50,22 +52,62 @@ const User = () => {
                   </div>
                 </Link>
                 <Link href="/user/payment">
-                  <div className="py-2 mr-10">
-                    <h3 className="font-semibold text-md text-gray-500 cursor-pointer">
+                  <div
+                    className={`py-2 mr-10 ${
+                      router.asPath == "/user/payment"
+                        ? "border-b-2 border-blue-600"
+                        : ""
+                    } cursor-pointer`}
+                  >
+                    <h3
+                      className={`font-semibold text-md ${
+                        router.asPath == "/user/payment"
+                          ? "text-blue-500"
+                          : "text-gray-500"
+                      }  cursor-pointer`}
+                    >
                       Payment
                     </h3>
                   </div>
                 </Link>
-                <div className="py-2 mr-10">
-                  <h3 className="font-semibold text-md text-gray-500 cursor-pointer">
-                    Address
-                  </h3>
-                </div>
-                <div className="py-2 mr-10">
-                  <h3 className="font-semibold text-md text-gray-500 cursor-pointer">
-                    Password
-                  </h3>
-                </div>
+                <Link href="/user/address">
+                  <div
+                    className={`py-2 mr-10 ${
+                      router.asPath == "/user/address"
+                        ? "border-b-2 border-blue-600"
+                        : ""
+                    } cursor-pointer`}
+                  >
+                    <h3
+                      className={`font-semibold text-md ${
+                        router.asPath == "/user/address"
+                          ? "text-blue-500"
+                          : "text-gray-500"
+                      }  cursor-pointer`}
+                    >
+                      Address
+                    </h3>
+                  </div>
+                </Link>
+                <Link href="/user/password">
+                  <div
+                    className={`py-2 mr-10 ${
+                      router.asPath == "/user/password"
+                        ? "border-b-2 border-blue-600"
+                        : ""
+                    } cursor-pointer`}
+                  >
+                    <h3
+                      className={`font-semibold text-md ${
+                        router.asPath == "/user/password"
+                          ? "text-blue-500"
+                          : "text-gray-500"
+                      }  cursor-pointer`}
+                    >
+                      Password
+                    </h3>
+                  </div>
+                </Link>
               </div>
               <div className="block my-5">
                 <h3 className="font-semibold text-gray-800">My Profile</h3>

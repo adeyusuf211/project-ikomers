@@ -20,3 +20,5 @@ export { default as ProductDetail } from "./product/detail";
 export { default as SubHeader } from "./subheader";
 export { default as User } from "./user";
 export { default as Payment } from "./user/payment";
+export { default as Address } from "./user/address";
+export { default as Password } from "./user/password";

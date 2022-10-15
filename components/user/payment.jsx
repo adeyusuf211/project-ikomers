@@ -70,16 +70,44 @@ const Payment = () => {
                     </h3>
                   </div>
                 </Link>
-                <div className="py-2 mr-10">
-                  <h3 className="font-semibold text-md text-gray-500 cursor-pointer">
-                    Address
-                  </h3>
-                </div>
-                <div className="py-2 mr-10">
-                  <h3 className="font-semibold text-md text-gray-500 cursor-pointer">
-                    Password
-                  </h3>
-                </div>
+                <Link href="/user/address">
+                  <div
+                    className={`py-2 mr-10 ${
+                      router.asPath == "/user/address"
+                        ? "border-b-2 border-blue-600"
+                        : ""
+                    } cursor-pointer`}
+                  >
+                    <h3
+                      className={`font-semibold text-md ${
+                        router.asPath == "/user/address"
+                          ? "text-blue-500"
+                          : "text-gray-500"
+                      }  cursor-pointer`}
+                    >
+                      Address
+                    </h3>
+                  </div>
+                </Link>
+                <Link href="/user/password">
+                  <div
+                    className={`py-2 mr-10 ${
+                      router.asPath == "/user/password"
+                        ? "border-b-2 border-blue-600"
+                        : ""
+                    } cursor-pointer`}
+                  >
+                    <h3
+                      className={`font-semibold text-md ${
+                        router.asPath == "/user/password"
+                          ? "text-blue-500"
+                          : "text-gray-500"
+                      }  cursor-pointer`}
+                    >
+                      Password
+                    </h3>
+                  </div>
+                </Link>
               </div>
               <div className="block my-5">
                 <h3 className="font-semibold text-gray-800">My Address</h3>
@@ -91,56 +119,116 @@ const Payment = () => {
               <div className="block my-5">
                 <div className="flex flex-col gap-5 my-3">
                   <div className="flex justify-between">
-                    <h3 className="font-semibold text-gray-700 text-md">Bank</h3>
-                    <a href="#" className="text-blue-500 underline text-md">Add Bank</a>
+                    <h3 className="font-semibold text-gray-700 text-md">
+                      Bank
+                    </h3>
+                    <a href="#" className="text-blue-500 underline text-md">
+                      Add Bank
+                    </a>
                   </div>
                   <div className="my-2 flex gap-3">
-                    <img src="../images/design.jpg" alt="gambar" className="w-20 h-20 object-cover object-center" />
+                    <img
+                      src="../images/design.jpg"
+                      alt="gambar"
+                      className="w-20 h-20 object-cover object-center"
+                    />
                     <div className="flex flex-col gap-1">
-                      <h3 className="font-medium text-lg text-gray-600">Bank Punya GW (BPG)</h3>
-                      <h5 className="font-medium text-md text-gray-500">Pemilik: *****Doe</h5>
-                      <h5 className="font-medium text-md text-gray-500">*******654</h5>
+                      <h3 className="font-medium text-lg text-gray-600">
+                        Bank Punya GW (BPG)
+                      </h3>
+                      <h5 className="font-medium text-md text-gray-500">
+                        Pemilik: *****Doe
+                      </h5>
+                      <h5 className="font-medium text-md text-gray-500">
+                        *******654
+                      </h5>
                     </div>
-                    <a href="#" className="ml-auto text-red-500 underline">Delete</a>
+                    <a href="#" className="ml-auto text-red-500 underline">
+                      Delete
+                    </a>
                   </div>
                 </div>
                 <div className="flex flex-col gap-5 my-3">
                   <div className="flex justify-between">
-                    <h3 className="font-semibold text-gray-700 text-md">Debit / Credit Card</h3>
-                    <a href="#" className="text-blue-500 underline text-md">Add Card</a>
+                    <h3 className="font-semibold text-gray-700 text-md">
+                      Debit / Credit Card
+                    </h3>
+                    <a href="#" className="text-blue-500 underline text-md">
+                      Add Card
+                    </a>
                   </div>
                   <div className="my-2 flex gap-3">
-                    <img src="../images/art.jpg" alt="gambar" className="w-20 h-20 object-cover object-center" />
+                    <img
+                      src="../images/art.jpg"
+                      alt="gambar"
+                      className="w-20 h-20 object-cover object-center"
+                    />
                     <div className="flex flex-col gap-1">
-                      <h3 className="font-medium text-lg text-gray-600">Visa</h3>
-                      <h5 className="font-medium text-md text-gray-500">Pemilik: *****Doe</h5>
-                      <h5 className="font-medium text-md text-gray-500">*********7549</h5>
+                      <h3 className="font-medium text-lg text-gray-600">
+                        Visa
+                      </h3>
+                      <h5 className="font-medium text-md text-gray-500">
+                        Pemilik: *****Doe
+                      </h5>
+                      <h5 className="font-medium text-md text-gray-500">
+                        *********7549
+                      </h5>
                     </div>
-                    <a href="#" className="ml-auto text-red-500 underline">Delete</a>
+                    <a href="#" className="ml-auto text-red-500 underline">
+                      Delete
+                    </a>
                   </div>
                 </div>
                 <div className="flex flex-col gap-5 my-3">
                   <div className="flex justify-between">
-                    <h3 className="font-semibold text-gray-700 text-md">Ewallet</h3>
-                    <a href="#" className="text-blue-500 underline text-md">Add Wallet</a>
+                    <h3 className="font-semibold text-gray-700 text-md">
+                      Ewallet
+                    </h3>
+                    <a href="#" className="text-blue-500 underline text-md">
+                      Add Wallet
+                    </a>
                   </div>
                   <div className="flex gap-3">
-                    <img src="../images/technology.jpg" alt="gambar" className="w-20 h-20 object-cover object-center" />
+                    <img
+                      src="../images/technology.jpg"
+                      alt="gambar"
+                      className="w-20 h-20 object-cover object-center"
+                    />
                     <div className="flex flex-col gap-1">
-                      <h3 className="font-medium text-lg text-gray-600">Dani</h3>
-                      <h5 className="font-medium text-md text-gray-500">Pemilik: *****Doe</h5>
-                      <h5 className="font-medium text-md text-gray-500">******7549</h5>
+                      <h3 className="font-medium text-lg text-gray-600">
+                        Dani
+                      </h3>
+                      <h5 className="font-medium text-md text-gray-500">
+                        Pemilik: *****Doe
+                      </h5>
+                      <h5 className="font-medium text-md text-gray-500">
+                        ******7549
+                      </h5>
                     </div>
-                    <a href="#" className="ml-auto text-red-500 underline">Delete</a>
+                    <a href="#" className="ml-auto text-red-500 underline">
+                      Delete
+                    </a>
                   </div>
                   <div className="flex gap-3">
-                    <img src="../images/banner.jpg" alt="gambar" className="w-20 h-20 object-cover object-center" />
+                    <img
+                      src="../images/banner.jpg"
+                      alt="gambar"
+                      className="w-20 h-20 object-cover object-center"
+                    />
                     <div className="flex flex-col gap-1">
-                      <h3 className="font-medium text-lg text-gray-600">LinkDoank</h3>
-                      <h5 className="font-medium text-md text-gray-500">Pemilik: *****Doe</h5>
-                      <h5 className="font-medium text-md text-gray-500">******3452</h5>
+                      <h3 className="font-medium text-lg text-gray-600">
+                        LinkDoank
+                      </h3>
+                      <h5 className="font-medium text-md text-gray-500">
+                        Pemilik: *****Doe
+                      </h5>
+                      <h5 className="font-medium text-md text-gray-500">
+                        ******3452
+                      </h5>
                     </div>
-                    <a href="#" className="ml-auto text-red-500 underline">Delete</a>
+                    <a href="#" className="ml-auto text-red-500 underline">
+                      Delete
+                    </a>
                   </div>
                 </div>
               </div>
