@@ -23,7 +23,7 @@ const Payment = () => {
               </h3>
             </div>
           </div>
-          <div className="w-full h-full flex gap-3 my-3">
+          <div className="w-full h-full flex lg:flex-row flex-col gap-3 my-3">
             <div className="bg-white p-5 block lg:w-[30%] w-full h-full">
               <h3 className="font-semibold text-gray-800 my-2">My Account</h3>
               <h3 className="font-semibold text-gray-800 my-2">My Order</h3>
@@ -110,7 +110,7 @@ const Payment = () => {
                 </Link>
               </div>
               <div className="block my-5">
-                <h3 className="font-semibold text-gray-800">My Address</h3>
+                <h3 className="font-semibold text-gray-800">My Payment</h3>
                 <p className="text-gray-500 text-sm">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                   Quod, eveniet.
@@ -130,16 +130,16 @@ const Payment = () => {
                     <img
                       src="../images/design.jpg"
                       alt="gambar"
-                      className="w-20 h-20 object-cover object-center"
+                      className="lg:w-20 lg:h-20 w-14 h-14 object-cover object-center"
                     />
-                    <div className="flex flex-col gap-1">
-                      <h3 className="font-medium text-lg text-gray-600">
+                    <div className="flex flex-col gap-0 lg:gap-1">
+                      <h3 className="font-semibold text-sm lg:text-lg text-gray-600">
                         Bank Punya GW (BPG)
                       </h3>
-                      <h5 className="font-medium text-md text-gray-500">
+                      <h5 className="font-normal text-sm lg:text-md text-gray-500">
                         Pemilik: *****Doe
                       </h5>
-                      <h5 className="font-medium text-md text-gray-500">
+                      <h5 className="font-normal text-sm lg:text-md text-gray-500">
                         *******654
                       </h5>
                     </div>
@@ -161,16 +161,16 @@ const Payment = () => {
                     <img
                       src="../images/art.jpg"
                       alt="gambar"
-                      className="w-20 h-20 object-cover object-center"
+                      className="lg:w-20 lg:h-20 w-14 h-14 object-cover object-center"
                     />
-                    <div className="flex flex-col gap-1">
-                      <h3 className="font-medium text-lg text-gray-600">
+                    <div className="flex flex-col gap-0 lg:gap-1">
+                      <h3 className="font-semibold text-sm lg:text-lg text-gray-600">
                         Visa
                       </h3>
-                      <h5 className="font-medium text-md text-gray-500">
+                      <h5 className="font-normal text-sm lg:text-md text-gray-500">
                         Pemilik: *****Doe
                       </h5>
-                      <h5 className="font-medium text-md text-gray-500">
+                      <h5 className="font-normal text-sm lg:text-md text-gray-500">
                         *********7549
                       </h5>
                     </div>
@@ -192,16 +192,16 @@ const Payment = () => {
                     <img
                       src="../images/technology.jpg"
                       alt="gambar"
-                      className="w-20 h-20 object-cover object-center"
+                      className="lg:w-20 lg:h-20 w-14 h-14 object-cover object-center"
                     />
-                    <div className="flex flex-col gap-1">
-                      <h3 className="font-medium text-lg text-gray-600">
+                    <div className="flex flex-col gap-0 lg:gap-1">
+                      <h3 className="font-semibold text-sm lg:text-lg text-gray-600">
                         Dani
                       </h3>
-                      <h5 className="font-medium text-md text-gray-500">
+                      <h5 className="font-medium text-sm lg:text-md text-gray-500">
                         Pemilik: *****Doe
                       </h5>
-                      <h5 className="font-medium text-md text-gray-500">
+                      <h5 className="font-medium text-sm lg:text-md text-gray-500">
                         ******7549
                       </h5>
                     </div>
@@ -213,16 +213,16 @@ const Payment = () => {
                     <img
                       src="../images/banner.jpg"
                       alt="gambar"
-                      className="w-20 h-20 object-cover object-center"
+                      className="lg:w-20 lg:h-20 w-14 h-14 object-cover object-center"
                     />
                     <div className="flex flex-col gap-1">
-                      <h3 className="font-medium text-lg text-gray-600">
+                      <h3 className="font-semibold text-sm lg:text-lg text-gray-600">
                         LinkDoank
                       </h3>
-                      <h5 className="font-medium text-md text-gray-500">
+                      <h5 className="font-medium text-sm lg:text-md text-gray-500">
                         Pemilik: *****Doe
                       </h5>
-                      <h5 className="font-medium text-md text-gray-500">
+                      <h5 className="font-medium text-sm lg:text-md text-gray-500">
                         ******3452
                       </h5>
                     </div>

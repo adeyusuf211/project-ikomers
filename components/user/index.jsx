@@ -23,7 +23,7 @@ const User = () => {
               </h3>
             </div>
           </div>
-          <div className="w-full h-full flex gap-3 my-3">
+          <div className="w-full h-full flex lg:flex-row flex-col gap-3 my-3">
             <div className="bg-white p-5 block lg:w-[30%] w-full h-full">
               <h3 className="font-semibold text-gray-800 my-2">My Account</h3>
               <h3 className="font-semibold text-gray-800 my-2">My Order</h3>
@@ -117,22 +117,22 @@ const User = () => {
                 </p>
               </div>
               <div className="relative">
-                <div className="flex gap-5 my-5">
+                <div className="flex lg:flex-row flex-col-reverse gap-5 my-5">
                   <div className="block w-full">
                     <div className="flex my-2">
-                      <h4 className="font-medium text-gray-600 w-[30%]">
+                      <h4 className="font-medium text-gray-600 w-[40%] lg:w-[30%]">
                         Username:
                       </h4>
                       <h3 className="font-semibold text-gray-800">johndoe</h3>
                     </div>
                     <div className="flex my-2">
-                      <h4 className="font-medium text-gray-600 w-[30%]">
+                      <h4 className="font-medium text-gray-600 w-[40%] lg:w-[30%]">
                         Full Name:
                       </h4>
                       <h3 className="font-semibold text-gray-800">John Doe</h3>
                     </div>
                     <div className="flex my-2">
-                      <h4 className="font-medium text-gray-600 w-[30%]">
+                      <h4 className="font-medium text-gray-600 w-[40%] lg:w-[30%]">
                         Email:
                       </h4>
                       <h3 className="font-semibold text-gray-800">
@@ -140,7 +140,7 @@ const User = () => {
                       </h3>
                     </div>
                     <div className="flex my-2">
-                      <h4 className="font-medium text-gray-600 w-[30%]">
+                      <h4 className="font-medium text-gray-600 w-[40%] lg:w-[30%]">
                         Telp:
                       </h4>
                       <h3 className="font-semibold text-gray-800">
@@ -148,13 +148,13 @@ const User = () => {
                       </h3>
                     </div>
                     <div className="flex my-2">
-                      <h4 className="font-medium text-gray-600 w-[30%]">
+                      <h4 className="font-medium text-gray-600 w-[40%] lg:w-[30%]">
                         Gender:
                       </h4>
                       <h3 className="font-semibold text-gray-800">Man</h3>
                     </div>
                     <div className="flex my-2">
-                      <h4 className="font-medium text-gray-600 w-[30%]">
+                      <h4 className="font-medium text-gray-600 w-[40%] lg:w-[30%]">
                         Birth Date:
                       </h4>
                       <h3 className="font-semibold text-gray-800">
@@ -162,13 +162,13 @@ const User = () => {
                       </h3>
                     </div>
                     <div className="flex my-2">
-                      <h4 className="font-medium text-gray-600 w-[30%]"></h4>
-                      <button className="px-4 py-1 bg-red-500 text-white font-medium shadow-lg shadow-red-300 hover:shadow-none transition-all duration-300 ease-linear">
+                      <h4 className="font-medium text-gray-600 w-[40%] lg:w-[30%]"></h4>
+                      <button className="px-4 py-1 bg-red-500 text-white font-medium shadow-lg shadow-red-300 hover:shadow-none transition-all duration-300 ease-linear mt-5">
                         Save
                       </button>
                     </div>
                   </div>
-                  <div className="flex flex-col items-center w-[30%] gap-5">
+                  <div className="flex flex-col items-center w-full lg:w-[30%] gap-5">
                     <img
                       src="../images/design.jpg"
                       alt="gambar"

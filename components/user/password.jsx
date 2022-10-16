@@ -16,14 +16,14 @@ const Password = () => {
                     />
                     <div className="block">
                         <h1 className="font-semibold text-xl text-gray-800">
-                        John Doe
+                            John Doe
                         </h1>
                         <h3 className="font-medium text-gray-500 text-sm">
-                        Classic Member
+                            Classic Member
                         </h3>
                     </div>
                 </div>
-                <div className="w-full h-full flex gap-3 my-3">
+                <div className="w-full h-full flex lg:flex-row flex-col gap-3 my-3">
                     <div className="bg-white p-5 block lg:w-[30%] w-full h-full">
                         <h3 className="font-semibold text-gray-800 my-2">My Account</h3>
                         <h3 className="font-semibold text-gray-800 my-2">My Order</h3>
@@ -122,28 +122,28 @@ const Password = () => {
                         </div>
                         <div className="block my-7">
                             <div className="flex flex-col gap-1 my-3">
-                                <div className="flex items-center my-2">
-                                    <h3 className="font-medium text-md text-gray-800 w-[30%]">Old Password</h3>
+                                <div className="flex lg:flex-row flex-col items-start lg:items-center my-2">
+                                    <h3 className="font-medium text-md text-gray-800 w-full lg:w-[30%]">Old Password</h3>
                                     <div className="border border-gray-700 p-2 w-full">
                                         <input type="password" placeholder="old password" className="outline-none border-none text-sm" />
                                     </div>
                                 </div>
-                                <div className="flex items-center my-2">
-                                    <h3 className="font-medium text-md text-gray-800 w-[30%]">New Password</h3>
+                                <div className="flex lg:flex-row flex-col items-start lg:items-center my-2">
+                                    <h3 className="font-medium text-md text-gray-800 w-full lg:w-[30%]">New Password</h3>
                                     <div className="border border-gray-700 p-2 w-full">
                                         <input type="password" placeholder="new password" className="outline-none border-none text-sm" />
                                     </div>
                                 </div>
-                                <div className="flex items-center my-2">
-                                    <h3 className="font-medium text-md text-gray-800 w-[30%]">Repeat Password</h3>
+                                <div className="flex lg:flex-row flex-col items-start lg:items-center my-2">
+                                    <h3 className="font-medium text-md text-gray-800 w-full lg:w-[30%]">Repeat Password</h3>
                                     <div className="border border-gray-700 p-2 w-full">
                                         <input type="password" placeholder="repeat password" className="outline-none border-none text-sm" />
                                     </div>
                                 </div>
                                 </div>
                                 <div className="flex my-2">
-                                    <h3 className="font-medium text-sm text-gray-800 w-[23%]"></h3>
-                                    <button className="bg-red-500 px-4 py-2 text-white shadow-lg shadow-red-300 hover:shadow-none transition-all duration-300 ease-linear">
+                                    <h3 className="font-medium text-sm text-gray-800 w-0 lg:w-[23%]"></h3>
+                                    <button className="bg-red-500 px-4 py-2 text-white shadow-lg shadow-red-300 hover:shadow-none transition-all duration-300 ease-linear lg:mx-0 mx-auto">
                                         Change Password
                                     </button>
                                 </div>
