@@ -34,7 +34,7 @@ const Address = () => {
                 <h3 className="font-semibold text-gray-800 my-2">My Voucher</h3>
               </div>
               <div className="bg-white p-5 w-full h-full block">
-                <div className="flex gap-3">
+                <div className="flex gap-3 lg:overflow-x-hidden overflow-x-auto">
                   <Link href="/user">
                     <div
                       className={`py-2 mr-10 ${
@@ -114,12 +114,10 @@ const Address = () => {
                 </div>
                 <div className="block my-5">
                   <div className="block">
-                    <h3 className="font-semibold text-gray-800">
-                      My Address
-                    </h3>
+                    <h3 className="font-semibold text-gray-800">My Address</h3>
                     <p className="text-gray-500 text-sm">
-                      Lorem ipsum dolor sit, amet consectetur adipisicing
-                      elit. Quod, eveniet.
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Quod, eveniet.
                     </p>
                   </div>
                 </div>
