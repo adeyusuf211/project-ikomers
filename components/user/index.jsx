@@ -31,7 +31,7 @@ const User = () => {
               <h3 className="font-semibold text-gray-800 my-2">My Voucher</h3>
             </div>
             <div className="bg-white p-5 w-full h-full block">
-              <div className="flex gap-3 lg:overflow-x-hidden overflow-x-auto">
+              <div className="flex gap-3 lg:overflow-x-hidden overflow-x-auto hidden-scrollbar">
                 <Link href="/user">
                   <div
                     className={`py-2 mr-10 ${
