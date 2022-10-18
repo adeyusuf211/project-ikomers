@@ -9,7 +9,7 @@ const OrderNav = () => {
       <div className="flex gap-3 lg:overflow-x-hidden overflow-x-auto hidden-scrollbar">
         <Link href="/user/order">
           <div
-            className={`py-2 mr-10 ${
+            className={`py-2 mr-10 shrink-0 ${
               router.asPath == "/user/order"
                 ? "border-b-2 border-blue-600"
                 : ""
@@ -28,7 +28,7 @@ const OrderNav = () => {
         </Link>
         <Link href="/user/order/notpaid">
           <div
-            className={`py-2 mr-10 ${
+            className={`py-2 mr-10 shrink-0 ${
               router.asPath == "/user/order/notpaid"
                 ? "border-b-2 border-blue-600"
                 : ""
@@ -66,7 +66,7 @@ const OrderNav = () => {
         </Link>
         <Link href="/user/order/finished">
           <div
-            className={`py-2 mr-10 ${
+            className={`py-2 mr-10 shrink-0 ${
               router.asPath == "/user/order/finished"
                 ? "border-b-2 border-blue-600"
                 : ""
@@ -85,7 +85,7 @@ const OrderNav = () => {
         </Link>
         <Link href="/user/order/cancelled">
           <div
-            className={`py-2 mr-10 ${
+            className={`py-2 mr-10 shrink-0 ${
               router.asPath == "/user/order/cancelled"
                 ? "border-b-2 border-blue-600"
                 : ""

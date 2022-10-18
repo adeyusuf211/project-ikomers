@@ -21,7 +21,7 @@ const Shipping = () => {
           </div>
           <div className="w-full h-full flex lg:flex-row flex-col gap-3 my-3">
             <SideNav />
-            <div className="bg-white p-5 w-full h-full block">
+            <div className="bg-white p-5 w-full h-full block lg:mb-0 mb-10">
               <OrderNav />
               <div className="block my-5">
                 <h3 className="font-semibold text-gray-800">Shipping</h3>
@@ -36,19 +36,19 @@ const Shipping = () => {
                     <span className="px-2 bg-red-500 text-white font-normal text-sm">
                       star
                     </span>
-                    <h3 className="text-gray-800 font-medium text-md">
+                    <h3 className="text-gray-800 font-medium text-sm lg:text-md">
                       campuranstore
                     </h3>
-                    <span className="ml-auto text-blue-600">
+                    <span className="ml-auto text-sm text-blue-600">
                       Shipping Proccess
                     </span>
                   </div>
                   <hr className="my-3 w-full border border-gray-300" />
-                  <div className="flex gap-5">
+                  <div className="flex lg:flex-row flex-col gap-5">
                     <img
                       src="../../../images/furniture1.jpg"
                       alt="gambar"
-                      className="w-24 h-24 object-cover object-center"
+                      className="lg:w-24 w-full lg:h-24 h-full object-cover object-center"
                     />
                     <div className="flex flex-col">
                       <h3 className="font-normal text-2xl text-gray-800">

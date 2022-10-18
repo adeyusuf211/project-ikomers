@@ -3,9 +3,7 @@ import { useRouter } from "next/router";
 import { useState } from "react";
 
 const Navbar = () => {
-
-    const route = useRouter();
-
+    const router = useRouter();
     const [showMenu, setShowMenu]   = useState(false);
 
     return (
@@ -16,32 +14,81 @@ const Navbar = () => {
         <ul className="flex gap-10 lg:relative fixed bottom-0 right-0 w-full justify-center items-center lg:bg-none bg-white lg:py-0 py-5 z-[9999999999999999]">
           <li>
             <Link href="/">
-              <a href="#" className={`${route.asPath == '/' ? 'text-gray-800 font-semibold' : 'text-gray-600'}`}>Home</a>
+              <a
+                href="#"
+                className={`${
+                  router.asPath == "/"
+                    ? "text-gray-800 font-semibold"
+                    : "text-gray-600"
+                }`}
+              >
+                Home
+              </a>
             </Link>
           </li>
           <li>
             <Link href="/product">
-              <a href="#" className={`${route.asPath == '/product' ? 'text-gray-800 font-semibold' : 'text-gray-600'}`}>Products</a>
+              <a
+                href="#"
+                className={`${
+                  router.asPath == "/product"
+                    ? "text-gray-800 font-semibold"
+                    : "text-gray-600"
+                }`}
+              >
+                Products
+              </a>
             </Link>
           </li>
           <li>
             <Link href="/blog">
-              <a href="#" className={`${route.asPath == '/blog' ? 'text-gray-800 font-semibold' : 'text-gray-600'}`}>Blogs</a>
+              <a
+                href="#"
+                className={`${
+                  router.asPath == "/blog"
+                    ? "text-gray-800 font-semibold"
+                    : "text-gray-600"
+                }`}
+              >
+                Blogs
+              </a>
             </Link>
           </li>
         </ul>
         <ul className="flex gap-5">
           <Link href="/cart">
-            <li className="cursor-pointer">
-              <img 
-                src="../images/icons/cart.svg" 
-                alt="gambar" 
-              />
-            </li>
+            <img
+              src={`${
+                router.asPath == "/user/profile" ||
+                router.asPath == "/user/profile/address" ||
+                router.asPath == "/user/profile/payment" ||
+                router.asPath == "/user/profile/password" ||
+                router.asPath == "/user/order" ||
+                router.asPath == "/user/order/notpaid" ||
+                router.asPath == "/user/order/shipping" ||
+                router.asPath == "/user/order/finished" ||
+                router.asPath == "/user/order/cancelled"
+                  ? "../../images/icons/user.svg"
+                  : "../images/icons/user.svg"
+              }`}
+              alt="gambar"
+            />
           </Link>
           <li className="cursor-pointer relative">
             <img
-              src="../images/icons/user.svg"
+              src={`${
+                router.asPath == "/user/profile" ||
+                router.asPath == "/user/profile/address" ||
+                router.asPath == "/user/profile/payment" ||
+                router.asPath == "/user/profile/password" ||
+                router.asPath == "/user/order" ||
+                router.asPath == "/user/order/notpaid" ||
+                router.asPath == "/user/order/shipping" ||
+                router.asPath == "/user/order/finished" ||
+                router.asPath == "/user/order/cancelled"
+                  ? "../../images/icons/user.svg"
+                  : "../images/icons/user.svg"
+              }`}
               alt="gambar"
               onClick={() => setShowMenu(!showMenu)}
             />
