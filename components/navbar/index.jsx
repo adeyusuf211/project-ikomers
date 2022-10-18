@@ -68,8 +68,8 @@ const Navbar = () => {
                 router.asPath == "/user/order/shipping" ||
                 router.asPath == "/user/order/finished" ||
                 router.asPath == "/user/order/cancelled"
-                  ? "../../images/icons/user.svg"
-                  : "../images/icons/user.svg"
+                  ? "../../images/icons/cart.svg"
+                  : "../images/icons/cart.svg"
               }`}
               alt="gambar"
             />
