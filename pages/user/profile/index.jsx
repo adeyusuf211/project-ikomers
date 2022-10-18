@@ -1,4 +1,4 @@
-import { MetaData, Navbar, SubHeader, User } from '../../components';
+import { MetaData, Navbar, SubHeader, User } from '../../../components';
 
 const user = () => {
   return (

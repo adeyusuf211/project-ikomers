@@ -1,4 +1,4 @@
-import { MetaData, Navbar, Password, SubHeader } from "../../components";
+import { MetaData, Navbar, Password, SubHeader } from "../../../components";
 
 const password = () => {
   return (

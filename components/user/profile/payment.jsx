@@ -1,18 +1,14 @@
-import Link from "next/link";
-
-import { useRouter } from "next/router";
+import ProfileNav from "../../navbar/profilenav";
+import SideNav from "../../navbar/sidenav";
 
 const Payment = () => {
-
-  const router = useRouter()
-
   return (
     <>
       <div className="w-full h-full py-5 px-5 lg:px-[150px] bg-gray-100">
         <div className="block">
           <div className="flex gap-3 p-5 items-center bg-white mb-5">
             <img
-              src="../images/design.jpg"
+              src="../../images/design.jpg"
               alt="gambar"
               className="w=16 h-16 rounded-full object-cover object-center"
             />
@@ -24,91 +20,9 @@ const Payment = () => {
             </div>
           </div>
           <div className="w-full h-full flex lg:flex-row flex-col gap-3 my-3">
-            <div className="bg-white p-5 block lg:w-[30%] w-full h-full">
-              <h3 className="font-semibold text-gray-800 my-2">My Account</h3>
-              <h3 className="font-semibold text-gray-800 my-2">My Order</h3>
-              <h3 className="font-semibold text-gray-800 my-2">Notification</h3>
-              <h3 className="font-semibold text-gray-800 my-2">My Voucher</h3>
-            </div>
+            <SideNav />
             <div className="bg-white p-5 w-full h-full block">
-              <div className="flex gap-3 lg:overflow-x-hidden overflow-x-auto hidden-scrollbar">
-                <Link href="/user">
-                  <div
-                    className={`py-2 mr-10 ${
-                      router.asPath == "/user"
-                        ? "border-b-2 border-blue-600"
-                        : ""
-                    } cursor-pointer`}
-                  >
-                    <h3
-                      className={`font-semibold text-md ${
-                        router.asPath == "/user"
-                          ? "text-blue-600"
-                          : "text-gray-500"
-                      }`}
-                    >
-                      Profile
-                    </h3>
-                  </div>
-                </Link>
-                <Link href="/user/payment">
-                  <div
-                    className={`py-2 mr-10 ${
-                      router.asPath == "/user/payment"
-                        ? "border-b-2 border-blue-600"
-                        : ""
-                    } cursor-pointer`}
-                  >
-                    <h3
-                      className={`font-semibold text-md ${
-                        router.asPath == "/user/payment"
-                          ? "text-blue-500"
-                          : "text-gray-500"
-                      }  cursor-pointer`}
-                    >
-                      Payment
-                    </h3>
-                  </div>
-                </Link>
-                <Link href="/user/address">
-                  <div
-                    className={`py-2 mr-10 ${
-                      router.asPath == "/user/address"
-                        ? "border-b-2 border-blue-600"
-                        : ""
-                    } cursor-pointer`}
-                  >
-                    <h3
-                      className={`font-semibold text-md ${
-                        router.asPath == "/user/address"
-                          ? "text-blue-500"
-                          : "text-gray-500"
-                      }  cursor-pointer`}
-                    >
-                      Address
-                    </h3>
-                  </div>
-                </Link>
-                <Link href="/user/password">
-                  <div
-                    className={`py-2 mr-10 ${
-                      router.asPath == "/user/password"
-                        ? "border-b-2 border-blue-600"
-                        : ""
-                    } cursor-pointer`}
-                  >
-                    <h3
-                      className={`font-semibold text-md ${
-                        router.asPath == "/user/password"
-                          ? "text-blue-500"
-                          : "text-gray-500"
-                      }  cursor-pointer`}
-                    >
-                      Password
-                    </h3>
-                  </div>
-                </Link>
-              </div>
+              <ProfileNav />
               <div className="block my-5">
                 <h3 className="font-semibold text-gray-800">My Payment</h3>
                 <p className="text-gray-500 text-sm">
@@ -128,7 +42,7 @@ const Payment = () => {
                   </div>
                   <div className="my-2 flex gap-3">
                     <img
-                      src="../images/design.jpg"
+                      src="../../images/design.jpg"
                       alt="gambar"
                       className="lg:w-20 lg:h-20 w-14 h-14 object-cover object-center"
                     />
@@ -159,7 +73,7 @@ const Payment = () => {
                   </div>
                   <div className="my-2 flex gap-3">
                     <img
-                      src="../images/art.jpg"
+                      src="../../images/art.jpg"
                       alt="gambar"
                       className="lg:w-20 lg:h-20 w-14 h-14 object-cover object-center"
                     />
@@ -190,7 +104,7 @@ const Payment = () => {
                   </div>
                   <div className="flex gap-3">
                     <img
-                      src="../images/technology.jpg"
+                      src="../../images/technology.jpg"
                       alt="gambar"
                       className="lg:w-20 lg:h-20 w-14 h-14 object-cover object-center"
                     />
@@ -211,7 +125,7 @@ const Payment = () => {
                   </div>
                   <div className="flex gap-3">
                     <img
-                      src="../images/banner.jpg"
+                      src="../../images/banner.jpg"
                       alt="gambar"
                       className="lg:w-20 lg:h-20 w-14 h-14 object-cover object-center"
                     />

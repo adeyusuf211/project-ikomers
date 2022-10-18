@@ -1,4 +1,4 @@
-import { MetaData, Navbar, Payment, SubHeader } from "../../components";
+import { MetaData, Navbar, Payment, SubHeader } from "../../../components";
 
 const payment = () => {
     return (

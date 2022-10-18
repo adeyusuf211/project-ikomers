@@ -1,4 +1,4 @@
-import { Address, MetaData, Navbar, SubHeader } from "../../components";
+import { Address, MetaData, Navbar, SubHeader } from "../../../components";
 
 const address = () => {
   return (

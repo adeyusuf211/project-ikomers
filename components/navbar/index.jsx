@@ -53,7 +53,7 @@ const Navbar = () => {
                 <Link href="/auth/register">
                   <a className="ml-3 mt-1 cursor-pointer">Register</a>
                 </Link>
-                <Link href="/user">
+                <Link href="/user/profile">
                   <a className="ml-3 mt-1 cursor-pointer">My Account</a>
                 </Link>
               </div>
