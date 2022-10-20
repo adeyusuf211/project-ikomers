@@ -72,7 +72,8 @@ const Navbar = () => {
                   router.asPath == "/user/voucher" ||
                   router.asPath == "/user/voucher/freeshipping" ||
                   router.asPath == "/user/voucher/discount" ||
-                  router.asPath == "/user/voucher/cashback"
+                  router.asPath == "/user/voucher/cashback" ||
+                  router.asPath == "/user/notification"
                     ? "../../images/icons/cart.svg"
                     : "../images/icons/cart.svg"
                 }`}
@@ -95,7 +96,8 @@ const Navbar = () => {
                 router.asPath == "/user/voucher" ||
                 router.asPath == "/user/voucher/freeshipping" ||
                 router.asPath == "/user/voucher/discount" ||
-                router.asPath == "/user/voucher/cashback"
+                router.asPath == "/user/voucher/cashback" ||
+                router.asPath == "/user/notification"
                   ? "../../images/icons/user.svg"
                   : "../images/icons/user.svg"
               }`}

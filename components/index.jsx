@@ -35,3 +35,4 @@ export { default as Voucher } from "./user/voucher";
 export { default as FreeShipping } from "./user/voucher/freeshipping";
 export { default as Discount } from "./user/voucher/discount";
 export { default as Cashback } from "./user/voucher/cashback";
+export { default as Notification } from "./user/notification";
