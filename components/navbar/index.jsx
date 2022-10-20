@@ -56,24 +56,30 @@ const Navbar = () => {
           </li>
         </ul>
         <ul className="flex gap-5">
-          <Link href="/cart">
-            <img
-              src={`${
-                router.asPath == "/user/profile" ||
-                router.asPath == "/user/profile/address" ||
-                router.asPath == "/user/profile/payment" ||
-                router.asPath == "/user/profile/password" ||
-                router.asPath == "/user/order" ||
-                router.asPath == "/user/order/notpaid" ||
-                router.asPath == "/user/order/shipping" ||
-                router.asPath == "/user/order/finished" ||
-                router.asPath == "/user/order/cancelled"
-                  ? "../../images/icons/cart.svg"
-                  : "../images/icons/cart.svg"
-              }`}
-              alt="gambar"
-            />
-          </Link>
+          <li className="cursor-pointer relative">
+            <Link href="/cart">
+              <img
+                src={`${
+                  router.asPath == "/user/profile" ||
+                  router.asPath == "/user/profile/address" ||
+                  router.asPath == "/user/profile/payment" ||
+                  router.asPath == "/user/profile/password" ||
+                  router.asPath == "/user/order" ||
+                  router.asPath == "/user/order/notpaid" ||
+                  router.asPath == "/user/order/shipping" ||
+                  router.asPath == "/user/order/finished" ||
+                  router.asPath == "/user/order/cancelled" ||
+                  router.asPath == "/user/voucher" ||
+                  router.asPath == "/user/voucher/freeshipping" ||
+                  router.asPath == "/user/voucher/discount" ||
+                  router.asPath == "/user/voucher/cashback"
+                    ? "../../images/icons/cart.svg"
+                    : "../images/icons/cart.svg"
+                }`}
+                alt="gambar"
+              />
+            </Link>
+          </li>
           <li className="cursor-pointer relative">
             <img
               src={`${
@@ -85,7 +91,11 @@ const Navbar = () => {
                 router.asPath == "/user/order/notpaid" ||
                 router.asPath == "/user/order/shipping" ||
                 router.asPath == "/user/order/finished" ||
-                router.asPath == "/user/order/cancelled"
+                router.asPath == "/user/order/cancelled" ||
+                router.asPath == "/user/voucher" ||
+                router.asPath == "/user/voucher/freeshipping" ||
+                router.asPath == "/user/voucher/discount" ||
+                router.asPath == "/user/voucher/cashback"
                   ? "../../images/icons/user.svg"
                   : "../images/icons/user.svg"
               }`}
