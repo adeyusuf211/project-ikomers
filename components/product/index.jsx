@@ -28,7 +28,7 @@ const Product = () => {
             <div className="relative">
               <div className="relative">
                 <img
-                  src="../images/furniture1.jpg"
+                  src="../images/furniture1.webp"
                   alt="product"
                   className="rounded-2xl w-fit"
                 />
@@ -61,7 +61,7 @@ const Product = () => {
             <div className="relative">
               <div className="relative">
                 <img
-                  src="../images/furniture2.jpg"
+                  src="../images/furniture2.webp"
                   alt="product"
                   className="rounded-2xl w-fit"
                 />
@@ -94,7 +94,7 @@ const Product = () => {
             <div className="relative">
               <div className="relative">
                 <img
-                  src="../images/furniture3.jpg"
+                  src="../images/furniture3.webp"
                   alt="product"
                   className="rounded-2xl w-fit"
                 />
@@ -127,7 +127,7 @@ const Product = () => {
             <div className="relative">
               <div className="relative">
                 <img
-                  src="../images/furniture4.jpg"
+                  src="../images/furniture4.webp"
                   alt="product"
                   className="rounded-2xl w-fit"
                 />
@@ -160,7 +160,7 @@ const Product = () => {
             <div className="relative">
               <div className="relative">
                 <img
-                  src="../images/furniture1.jpg"
+                  src="../images/furniture1.webp"
                   alt="product"
                   className="rounded-2xl w-fit"
                 />
@@ -193,7 +193,7 @@ const Product = () => {
             <div className="relative">
               <div className="relative">
                 <img
-                  src="../images/furniture2.jpg"
+                  src="../images/furniture2.webp"
                   alt="product"
                   className="rounded-2xl w-fit"
                 />
@@ -226,7 +226,7 @@ const Product = () => {
             <div className="relative">
               <div className="relative">
                 <img
-                  src="../images/furniture3.jpg"
+                  src="../images/furniture3.webp"
                   alt="product"
                   className="rounded-2xl w-fit"
                 />
@@ -259,7 +259,7 @@ const Product = () => {
             <div className="relative">
               <div className="relative">
                 <img
-                  src="../images/furniture4.jpg"
+                  src="../images/furniture4.webp"
                   alt="product"
                   className="rounded-2xl w-fit"
                 />
@@ -307,7 +307,7 @@ const Product = () => {
             <div className="relative shrink-0 lg:w-60 w-52 h-fit">
               <div className="relative">
                 <img
-                  src="../images/furniture1.jpg"
+                  src="../images/furniture1.webp"
                   alt="product"
                   className="rounded-2xl w-full h-full"
                 />
@@ -338,7 +338,7 @@ const Product = () => {
             <div className="relative shrink-0 lg:w-60 w-52 h-fit">
               <div className="relative">
                 <img
-                  src="../images/furniture2.jpg"
+                  src="../images/furniture2.webp"
                   alt="product"
                   className="rounded-2xl w-full h-full"
                 />
@@ -369,7 +369,7 @@ const Product = () => {
             <div className="relative shrink-0 lg:w-60 w-52 h-fit">
               <div className="relative">
                 <img
-                  src="../images/furniture4.jpg"
+                  src="../images/furniture4.webp"
                   alt="product"
                   className="rounded-2xl w-full h-full"
                 />
@@ -400,7 +400,7 @@ const Product = () => {
             <div className="relative shrink-0 lg:w-60 w-52 h-fit">
               <div className="relative">
                 <img
-                  src="../images/furniture3.jpg"
+                  src="../images/furniture3.webp"
                   alt="product"
                   className="rounded-2xl w-full h-full"
                 />

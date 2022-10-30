@@ -1,7 +1,12 @@
 import Category from '../category';
 import Link from 'next/link';
+import { useState } from 'react';
 
 const Homepage = () => {
+
+    const [likes, setLikes]         = useState(false);
+    const [countLike, setCountLike] = useState(500)
+
     return (
       <>
         <div className="w-full lg:px-[150px] px-5 py-10 bg-gray-100">
@@ -20,7 +25,7 @@ const Homepage = () => {
               <div className="relative">
                 <div className="relative">
                   <img
-                    src="../images/furniture1.jpg"
+                    src="../images/furniture1.webp"
                     alt="product"
                     className="rounded-2xl w-fit"
                   />
@@ -29,7 +34,9 @@ const Homepage = () => {
                   </span>
                 </div>
                 <div className="py-5 px-2">
-                  <span className="text-sm text-gray-600">Lorem ipsum dolor sit amet.</span>
+                  <span className="text-sm text-gray-600">
+                    Lorem ipsum dolor sit amet.
+                  </span>
                   <h3 className="font-bold text-xl text-gray-800">
                     Rp.300.000
                   </h3>
@@ -37,14 +44,19 @@ const Homepage = () => {
                     <a href="#" className="text-blue-500 font-semibold text-sm">
                       Add to cart
                     </a>
-                    <div className="flex items-center gap-1">
+                    <div className="flex items-center gap-1 cursor-pointer">
                       <img
-                        src="../images/icons/love.svg"
+                        src={
+                          likes
+                            ? "../images/icons/love-pink-fill.svg"
+                            : "../images/icons/love.svg"
+                        }
                         alt="icon"
                         className="w-4"
+                        onClick={() => setLikes(!likes)}
                       />
                       <span className="font-medium text-gray-700 text-sm">
-                        500
+                        {!likes ? countLike : countLike + 1}
                       </span>
                     </div>
                   </div>
@@ -53,7 +65,7 @@ const Homepage = () => {
               <div className="relative">
                 <div className="relative">
                   <img
-                    src="../images/furniture2.jpg"
+                    src="../images/furniture2.webp"
                     alt="product"
                     className="rounded-2xl w-fit"
                   />
@@ -62,7 +74,9 @@ const Homepage = () => {
                   </span>
                 </div>
                 <div className="py-5 px-2">
-                  <span className="text-sm text-gray-600">Lorem ipsum dolor sit amet.</span>
+                  <span className="text-sm text-gray-600">
+                    Lorem ipsum dolor sit amet.
+                  </span>
                   <h3 className="font-bold text-xl text-gray-800">
                     Rp.500.000
                   </h3>
@@ -70,14 +84,19 @@ const Homepage = () => {
                     <a href="#" className="text-blue-500 font-semibold text-sm">
                       Add to cart
                     </a>
-                    <div className="flex items-center gap-1">
+                    <div className="flex items-center gap-1 cursor-pointer">
                       <img
-                        src="../images/icons/love.svg"
+                        src={
+                          likes
+                            ? "../images/icons/love-pink-fill.svg"
+                            : "../images/icons/love.svg"
+                        }
                         alt="icon"
                         className="w-4"
+                        onClick={() => setLikes(!likes)}
                       />
                       <span className="font-medium text-gray-700 text-sm">
-                        300
+                        {!likes ? countLike : countLike + 1}
                       </span>
                     </div>
                   </div>
@@ -86,7 +105,7 @@ const Homepage = () => {
               <div className="relative">
                 <div className="relative">
                   <img
-                    src="../images/furniture3.jpg"
+                    src="../images/furniture3.webp"
                     alt="product"
                     className="rounded-2xl w-fit"
                   />
@@ -95,7 +114,9 @@ const Homepage = () => {
                   </span>
                 </div>
                 <div className="py-5 px-2">
-                  <span className="text-sm text-gray-600">Lorem ipsum dolor sit amet.</span>
+                  <span className="text-sm text-gray-600">
+                    Lorem ipsum dolor sit amet.
+                  </span>
                   <h3 className="font-bold text-xl text-gray-800">
                     Rp.300.000
                   </h3>
@@ -119,7 +140,7 @@ const Homepage = () => {
               <div className="relative">
                 <div className="relative">
                   <img
-                    src="../images/furniture4.jpg"
+                    src="../images/furniture4.webp"
                     alt="product"
                     className="rounded-2xl w-fit"
                   />
@@ -128,7 +149,9 @@ const Homepage = () => {
                   </span>
                 </div>
                 <div className="py-5 px-2">
-                  <span className="text-sm text-gray-600">Lorem ipsum dolor sit amet.</span>
+                  <span className="text-sm text-gray-600">
+                    Lorem ipsum dolor sit amet.
+                  </span>
                   <h3 className="font-bold text-xl text-gray-800">
                     Rp.500.000
                   </h3>
@@ -172,7 +195,7 @@ const Homepage = () => {
               <div className="block">
                 <div className="flex gap-3 mt-5">
                   <img
-                    src="../images/art.jpg"
+                    src="../images/art.webp"
                     alt="gambar"
                     className="lg:w-40 lg:h-40 h-20 w-20 object-cover object-center rounded-lg"
                   />
@@ -183,12 +206,14 @@ const Homepage = () => {
                     <h4 className="font-medium text-gray-600 lg:text-2xl">
                       Oct 04, 2022 - John Doe
                     </h4>
-                    <h5 className="font-medium text-blue-600 lg:text-xl">#art</h5>
+                    <h5 className="font-medium text-blue-600 lg:text-xl">
+                      #art
+                    </h5>
                   </div>
                 </div>
                 <div className="flex gap-3 mt-5">
                   <img
-                    src="../images/design.jpg"
+                    src="../images/design.webp"
                     alt="gambar"
                     className="lg:w-40 lg:h-40 h-20 w-20 object-cover object-center rounded-lg"
                   />
@@ -199,12 +224,14 @@ const Homepage = () => {
                     <h4 className="font-medium text-gray-600 lg:text-2xl">
                       Oct 04, 2022 - John Doe
                     </h4>
-                    <h5 className="font-medium text-blue-600 lg:text-xl">#design</h5>
+                    <h5 className="font-medium text-blue-600 lg:text-xl">
+                      #design
+                    </h5>
                   </div>
                 </div>
                 <div className="flex gap-3 mt-5">
                   <img
-                    src="../images/technology.jpg"
+                    src="../images/technology.webp"
                     alt="gambar"
                     className="lg:w-40 lg:h-40 h-20 w-20 object-cover object-center rounded-lg"
                   />
@@ -215,7 +242,9 @@ const Homepage = () => {
                     <h4 className="font-medium text-gray-600 lg:text-2xl">
                       Oct 04, 2022 - John Doe
                     </h4>
-                    <h5 className="font-medium text-blue-600 lg:text-xl">#technology</h5>
+                    <h5 className="font-medium text-blue-600 lg:text-xl">
+                      #technology
+                    </h5>
                   </div>
                 </div>
               </div>

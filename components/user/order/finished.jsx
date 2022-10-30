@@ -8,7 +8,7 @@ const Finished = () => {
         <div className="block">
           <div className="flex gap-3 p-5 items-center bg-white mb-5">
             <img
-              src="../../images/design.jpg"
+              src="../../images/design.webp"
               alt="gambar"
               className="w=16 h-16 rounded-full object-cover object-center"
             />
@@ -46,7 +46,7 @@ const Finished = () => {
                   <hr className="my-3 w-full border border-gray-300" />
                   <div className="flex lg:flex-row flex-col gap-5">
                     <img
-                      src="../../../images/furniture1.jpg"
+                      src="../../../images/furniture1.webp"
                       alt="gambar"
                       className="lg:w-24 w-full lg:h-24 h-full object-cover object-center"
                     />

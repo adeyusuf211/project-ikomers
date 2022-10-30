@@ -11,7 +11,7 @@ const Checkout = () => {
         <div className="block bg-white p-5">
           <div className="flex gap-3 relative">
             <img
-              src="../images/banner.jpg"
+              src="../images/banner.webp"
               alt="gambar"
               className="w-20 h-20 object-center object-cover"
             />
@@ -44,7 +44,7 @@ const Checkout = () => {
               <a href="#" className="text-md text-blue-500">Change</a>
             </div>
             <div className="flex gap-3 items-center">
-              <img src="../images/visa.jpg" alt="gambar" className="w-20 h-20 object-fit object-cover" />
+              <img src="../images/visa.webp" alt="gambar" className="w-20 h-20 object-fit object-cover" />
               <h3 className="font-bold text-md text-gray-800">+Rp.2.500</h3>
             </div>
           </div>

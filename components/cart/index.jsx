@@ -8,7 +8,7 @@ const Cart = () => {
           <div className="flex gap-3 relative">
             <img src="../images/icons/cross.svg" alt="icons" className="absolute -top-7 -right-7 w-6 h-6" />
             <img
-              src="../images/banner.jpg"
+              src="../images/banner.webp"
               alt="gambar"
               className="w-20 h-20 object-center object-cover"
             />
@@ -38,7 +38,7 @@ const Cart = () => {
           <div className="flex gap-3 relative">
             <img src="../images/icons/cross.svg" alt="icons" className="absolute -top-7 -right-7 w-6 h-6" />
             <img
-              src="../images/art.jpg"
+              src="../images/art.webp"
               alt="gambar"
               className="w-20 h-20 object-center object-cover"
             />
@@ -68,7 +68,7 @@ const Cart = () => {
           <div className="flex gap-3 relative">
             <img src="../images/icons/cross.svg" alt="icons" className="absolute -top-7 -right-7 w-6 h-6" />
             <img
-              src="../images/design.jpg"
+              src="../images/design.webp"
               alt="gambar"
               className="w-20 h-20 object-center object-cover"
             />

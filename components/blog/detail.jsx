@@ -5,7 +5,7 @@ const BlogDetail = () => {
         <div className="flex lg:flex-row flex-col gap-5">
           <div className="lg:w-[70%] w-full">
             <img
-              src="../images/design.jpg" className="w-96 h-96"
+              src="../images/design.webp" className="w-96 h-96"
               alt="gambar"
               className="w-full h-96 object-center object-cover"
             />
@@ -55,12 +55,12 @@ const BlogDetail = () => {
               </h3>
               <div className="flex gap-3 my-5">
                 <img
-                  src="../images/furniture1.jpg"
+                  src="../images/furniture1.webp"
                   alt="gambar"
                   className="w-60 h-60 flex"
                 />
                 <img
-                  src="../images/furniture2.jpg"
+                  src="../images/furniture2.webp"
                   alt="gambar"
                   className="w-60 h-60 flex"
                 />
@@ -105,7 +105,7 @@ const BlogDetail = () => {
             <div className="block my-5">
               <div className="flex gap-3 my-3">
                 <img
-                  src="../images/design.jpg"
+                  src="../images/design.webp"
                   alt="gambar"
                   className="w-20 h-20 object-cover object-center"
                 />
@@ -120,7 +120,7 @@ const BlogDetail = () => {
               </div>
               <div className="flex gap-3 my-3">
                 <img
-                  src="../images/background.jpg"
+                  src="../images/background.webp"
                   alt="gambar"
                   className="w-20 h-20 object-cover object-center"
                 />
@@ -135,7 +135,7 @@ const BlogDetail = () => {
               </div>
               <div className="flex gap-3 my-3">
                 <img
-                  src="../images/banner.jpg"
+                  src="../images/banner.webp"
                   alt="gambar"
                   className="w-20 h-20 object-cover object-center"
                 />
@@ -150,7 +150,7 @@ const BlogDetail = () => {
               </div>
               <div className="flex gap-3 my-3">
                 <img
-                  src="../images/technology.jpg"
+                  src="../images/technology.webp"
                   alt="gambar"
                   className="w-20 h-20 object-cover object-center"
                 />
@@ -165,7 +165,7 @@ const BlogDetail = () => {
               </div>
               <div className="flex gap-3 my-3">
                 <img
-                  src="../images/art.jpg"
+                  src="../images/art.webp"
                   alt="gambar"
                   className="w-20 h-20 object-cover object-center"
                 />
@@ -195,22 +195,22 @@ const BlogDetail = () => {
             </h3>
             <div className="flex gap-2">
               <img
-                src="../images/design.jpg"
+                src="../images/design.webp"
                 alt="gambar"
                 className="w-14 h-14 object-cover object-center"
               />
               <img
-                src="../images/art.jpg"
+                src="../images/art.webp"
                 alt="gambar"
                 className="w-14 h-14 object-cover object-center"
               />
               <img
-                src="../images/technology.jpg"
+                src="../images/technology.webp"
                 alt="gambar"
                 className="w-14 h-14 object-cover object-center"
               />
               <img
-                src="../images/banner.jpg"
+                src="../images/banner.webp"
                 alt="gambar"
                 className="w-14 h-14 object-cover object-center"
               />

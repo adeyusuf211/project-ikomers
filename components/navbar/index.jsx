@@ -11,7 +11,7 @@ const Navbar = () => {
         <Link href="/">
           <h3 className="font-semibold uppercase">ikomers</h3>
         </Link>
-        <ul className="flex gap-10 lg:relative fixed bottom-0 right-0 w-full justify-center items-center lg:bg-none bg-white lg:py-0 py-5 z-[9999999999999999]">
+        <ul className={`flex gap-10 lg:relative fixed bottom-0 right-0 w-full justify-center items-center lg:bg-none bg-white lg:py-0 py-5 z-[9999999999999999]`}>
           <li>
             <Link href="/">
               <a

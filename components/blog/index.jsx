@@ -26,7 +26,7 @@ const Blog = () => {
         <div className="flex lg:flex-wrap lg:justify-between lg:overflow-x-hidden overflow-x-auto gap-5 my-5 hidden-scrollbar">
           <div className="bg-white w-60 h-full shrink-0">
             <img
-              src="../images/design.jpg"
+              src="../images/design.webp"
               alt="gambar"
               className="object-cover object-center lg:w-full w-60 h-60 shrink-0"
             />
@@ -47,7 +47,7 @@ const Blog = () => {
           </div>
           <div className="bg-white w-60 h-full shrink-0">
             <img
-              src="../images/art.jpg"
+              src="../images/art.webp"
               alt="gambar"
               className="object-cover object-center lg:w-full w-60 h-60 shrink-0"
             />
@@ -68,7 +68,7 @@ const Blog = () => {
           </div>
           <div className="bg-white w-60 h-full shrink-0">
             <img
-              src="../images/technology.jpg"
+              src="../images/technology.webp"
               alt="gambar"
               className="object-cover object-center lg:w-full w-60 h-60 shrink-0"
             />
@@ -89,7 +89,7 @@ const Blog = () => {
           </div>
           <div className="bg-white w-60 h-full shrink-0">
             <img
-              src="../images/nature.jpg"
+              src="../images/nature.webp"
               alt="gambar"
               className="object-cover object-center lg:w-full w-60 h-60 shrink-0"
             />
@@ -117,7 +117,7 @@ const Blog = () => {
             <Link href="/blog/detail">
               <div className="flex gap-3 bg-white p-3 my-3 cursor-pointer">
                 <img
-                  src="../images/design.jpg"
+                  src="../images/design.webp"
                   alt="gambar"
                   className="lg:w-40 lg:h-40 w-20 h-20 object-cover object-center"
                 />
@@ -134,7 +134,7 @@ const Blog = () => {
             <Link href="/blog/detail">
               <div className="flex gap-3 bg-white p-3 my-3 cursor-pointer">
                 <img
-                  src="../images/art.jpg"
+                  src="../images/art.webp"
                   alt="gambar"
                   className="lg:w-40 lg:h-40 w-20 h-20 object-cover object-center"
                 />
@@ -151,7 +151,7 @@ const Blog = () => {
             <Link href="/blog/detail">
               <div className="flex gap-3 bg-white p-3 my-3 cursor-pointer">
                 <img
-                  src="../images/technology.jpg"
+                  src="../images/technology.webp"
                   alt="gambar"
                   className="lg:w-40 lg:h-40 w-20 h-20 object-cover object-center"
                 />
@@ -171,7 +171,7 @@ const Blog = () => {
             <div className="block my-5">
               <div className="flex gap-3 my-3">
                 <img
-                  src="../images/design.jpg"
+                  src="../images/design.webp"
                   alt="gambar"
                   className="w-20 h-20 object-cover object-center"
                 />
@@ -186,7 +186,7 @@ const Blog = () => {
               </div>
               <div className="flex gap-3 my-3">
                 <img
-                  src="../images/background.jpg"
+                  src="../images/background.webp"
                   alt="gambar"
                   className="w-20 h-20 object-cover object-center"
                 />
@@ -201,7 +201,7 @@ const Blog = () => {
               </div>
               <div className="flex gap-3 my-3">
                 <img
-                  src="../images/banner.jpg"
+                  src="../images/banner.webp"
                   alt="gambar"
                   className="w-20 h-20 object-cover object-center"
                 />
@@ -216,7 +216,7 @@ const Blog = () => {
               </div>
               <div className="flex gap-3 my-3">
                 <img
-                  src="../images/technology.jpg"
+                  src="../images/technology.webp"
                   alt="gambar"
                   className="w-20 h-20 object-cover object-center"
                 />
@@ -231,7 +231,7 @@ const Blog = () => {
               </div>
               <div className="flex gap-3 my-3">
                 <img
-                  src="../images/art.jpg"
+                  src="../images/art.webp"
                   alt="gambar"
                   className="w-20 h-20 object-cover object-center"
                 />
@@ -261,22 +261,22 @@ const Blog = () => {
             </h3>
             <div className="flex gap-2">
               <img
-                src="../images/design.jpg"
+                src="../images/design.webp"
                 alt="gambar"
                 className="w-14 h-14 object-cover object-center"
               />
               <img
-                src="../images/art.jpg"
+                src="../images/art.webp"
                 alt="gambar"
                 className="w-14 h-14 object-cover object-center"
               />
               <img
-                src="../images/technology.jpg"
+                src="../images/technology.webp"
                 alt="gambar"
                 className="w-14 h-14 object-cover object-center"
               />
               <img
-                src="../images/banner.jpg"
+                src="../images/banner.webp"
                 alt="gambar"
                 className="w-14 h-14 object-cover object-center"
               />

@@ -24,7 +24,7 @@ const ProductDetail = () => {
             onMouseLeave={() => setIsHover(false)}
           >
             <img
-              src="../images/furniture3.jpg"
+              src="../images/furniture3.webp"
               alt="gambar"
               className={`object-cover object-center flex w-full h-full ${
                 isHover ? "scale-[2]" : ""
@@ -120,7 +120,7 @@ const ProductDetail = () => {
             </div>
             <div className="block my-10">
               <div className="flex gap-3">
-                <img src="../images/art.jpg" alt="gambar" className="w-14 h-14 object-cover object-center rounded-full" />
+                <img src="../images/art.webp" alt="gambar" className="w-14 h-14 object-cover object-center rounded-full" />
                 <div className="block">
                   <h3 className="font-semibold text-lg text-gray-600">campuranstore</h3>
                   <h3 className="font-medium text-green-500">Online</h3>
@@ -215,7 +215,7 @@ const ProductDetail = () => {
               </div>
               <div className="flex gap-3">
                 <img
-                  src="../images/art.jpg"
+                  src="../images/art.webp"
                   alt="gambar"
                   className="w-10 h-10 rounded-full object-cover object-center"
                 />
@@ -228,17 +228,17 @@ const ProductDetail = () => {
                 <p className="font-medium text-sm text-gray-500 my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, dolore. Obcaecati a minima, dolorum nesciunt repellat magni facere excepturi corrupti placeat, illum delectus. Maxime qui expedita modi architecto omnis nobis!</p>
                 <div className="flex gap-2 my-3">
                   <img
-                    src="../images/design.jpg"
+                    src="../images/design.webp"
                     alt="gambar"
                     className="w-20 h-20"
                   />
                   <img
-                    src="../images/technology.jpg"
+                    src="../images/technology.webp"
                     alt="gambar"
                     className="w-20 h-20"
                   />
                   <img
-                    src="../images/furniture1.jpg"
+                    src="../images/furniture1.webp"
                     alt="gambar"
                     className="w-20 h-20"
                   />
@@ -275,7 +275,7 @@ const ProductDetail = () => {
               </div>
               <div className="flex gap-3">
                 <img
-                  src="../images/banner.jpg"
+                  src="../images/banner.webp"
                   alt="gambar"
                   className="w-10 h-10 rounded-full object-cover object-center"
                 />
@@ -288,12 +288,12 @@ const ProductDetail = () => {
                 <p className="font-medium text-sm text-gray-500 my-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam quia repellendus sequi! Aliquam perferendis provident obcaecati quisquam, ab impedit dolorem culpa pariatur animi repellendus doloremque dolorum nam voluptatibus veniam quo ratione sit deserunt beatae modi ducimus! Omnis soluta vel debitis laboriosam eaque, ratione autem magni. Expedita voluptatum dolor consequatur ea!</p>
                 <div className="flex gap-2 my-3">
                   <img
-                    src="../images/design.jpg"
+                    src="../images/design.webp"
                     alt="gambar"
                     className="w-20 h-20"
                   />
                   <img
-                    src="../images/technology.jpg"
+                    src="../images/technology.webp"
                     alt="gambar"
                     className="w-20 h-20"
                   />
@@ -311,22 +311,22 @@ const ProductDetail = () => {
             <h3 className="text-xl font-bold text-gray-800">More product</h3>
             <div className="mt-5 flex gap-3">
               <img
-                src="../images/furniture1.jpg"
+                src="../images/furniture1.webp"
                 alt="gambar"
                 className="lg:w-60 lg:h-full w-20 h-20  object-cover object-center"
               />
               <img
-                src="../images/furniture2.jpg"
+                src="../images/furniture2.webp"
                 alt="gambar"
                 className="lg:w-60 lg:h-full w-20 h-20  object-cover object-center"
               />
               <img
-                src="../images/furniture3.jpg"
+                src="../images/furniture3.webp"
                 alt="gambar"
                 className="lg:w-60 lg:h-full w-20 h-20  object-cover object-center"
               />
               <img
-                src="../images/furniture4.jpg"
+                src="../images/furniture4.webp"
                 alt="gambar"
                 className="lg:w-60 lg:h-full w-20 h-20  object-cover object-center"
               />

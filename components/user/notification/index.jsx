@@ -7,7 +7,7 @@ const Notification = () => {
         <div className="block">
           <div className="flex gap-3 p-5 items-center bg-white mb-5">
             <img
-              src="../../images/design.jpg"
+              src="../../images/design.webp"
               alt="gambar"
               className="w=16 h-16 rounded-full object-cover object-center"
             />
@@ -31,7 +31,7 @@ const Notification = () => {
               <div className="block">
                 <div className="flex gap-3 mb-3">
                   <img
-                    src="../images/art.jpg"
+                    src="../images/art.webp"
                     alt="gambar"
                     className="lg:w-28 w-24 lg:h-28 h-24 object-cover object-center"
                   />
@@ -56,7 +56,7 @@ const Notification = () => {
                 </div>
                 <div className="flex gap-3 mb-3">
                   <img
-                    src="../images/design.jpg"
+                    src="../images/design.webp"
                     alt="gambar"
                     className="lg:w-28 w-24 lg:h-28 h-24 object-cover object-center"
                   />
@@ -81,7 +81,7 @@ const Notification = () => {
                 </div>
                 <div className="flex gap-3 mb-3">
                   <img
-                    src="../images/technology.jpg"
+                    src="../images/technology.webp"
                     alt="gambar"
                     className="lg:w-28 w-24 lg:h-28 h-24 object-cover object-center"
                   />
