@@ -5,9 +5,8 @@ const BlogDetail = () => {
         <div className="flex lg:flex-row flex-col gap-5">
           <div className="lg:w-[70%] w-full">
             <img
-              src="../images/design.webp" className="w-96 h-96"
+              src="../images/design.webp" className="w-full h-96 object-center object-cover"
               alt="gambar"
-              className="w-full h-96 object-center object-cover"
             />
             <h3 className="font-bold text-3xl text-gray-800 my-3 text-center mt-10">
               Lorem ipsum dolor sit amet.
