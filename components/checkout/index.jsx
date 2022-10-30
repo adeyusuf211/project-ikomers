@@ -31,7 +31,7 @@ const Checkout = () => {
               <a href="#" className="text-md text-blue-500">Change</a>
             </div>
             <div className="flex gap-3 items-center">
-              <img src="../images/jne.png" alt="gambar" className="w-20 h-fit object-fit object-cover" />
+              <img src="../images/jne.webp" alt="gambar" className="w-20 h-fit object-fit object-cover" />
               <div className="flex flex-col gap-1">
                 <h3 className="font-bold text-md text-gray-800">Regular - Rp.10.000</h3>
                 <small className="text-gray-600">Est Time: 1 - 3 Days</small>

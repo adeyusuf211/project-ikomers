@@ -8,7 +8,7 @@ const Address = () => {
           <div className="block">
             <div className="flex gap-3 p-5 items-center bg-white mb-5">
               <img
-                src="../../images/design.jpg"
+                src="../../images/design.webp"
                 alt="gambar"
                 className="w=16 h-16 rounded-full object-cover object-center"
               />
