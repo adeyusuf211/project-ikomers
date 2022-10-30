@@ -188,7 +188,7 @@ const Homepage = () => {
                 <h3 className="font-semibold text-lg lg:text-2xl text-gray-700">
                   Our best article
                 </h3>
-                <Link href="/blogs">
+                <Link href="/blog">
                   <a className="font-semibold text-blue-500">View all</a>
                 </Link>
               </div>
