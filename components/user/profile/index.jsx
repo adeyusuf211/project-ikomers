@@ -1,5 +1,6 @@
 import ProfileNav from "../../navbar/profilenav";
 import SideNav from "../../navbar/sidenav";
+import Button from '../../button';
 
 const User = () => {
   return (
@@ -77,9 +78,13 @@ const User = () => {
                     </div>
                     <div className="flex my-2">
                       <h4 className="font-medium text-gray-600 w-[40%] lg:w-[30%]"></h4>
-                      <button className="px-4 py-1 bg-red-500 text-white font-medium shadow-lg shadow-red-300 hover:shadow-none transition-all duration-300 ease-linear mt-5">
-                        Save
-                      </button>
+                      <Button
+                        title="Save"
+                        bgColor="bg-red-500"
+                        shadow="shadow-red-300"
+                        textColor="text-white"
+                        link=""
+                      />
                     </div>
                   </div>
                   <div className="flex flex-col items-center w-full lg:w-[30%] gap-5">

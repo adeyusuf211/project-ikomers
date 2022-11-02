@@ -1,5 +1,6 @@
 import ProfileNav from "../../navbar/profilenav";
 import SideNav from "../../navbar/sidenav";
+import Button from "../../button";
 
 const Password = () => {
   return (
@@ -71,9 +72,13 @@ const Password = () => {
                 </div>
                 <div className="flex my-2">
                   <h3 className="font-medium text-sm text-gray-800 w-0 lg:w-[23%]"></h3>
-                  <button className="bg-red-500 px-4 py-2 text-white shadow-lg shadow-red-300 hover:shadow-none transition-all duration-300 ease-linear lg:mx-0 mx-auto">
-                    Change Password
-                  </button>
+                  <Button
+                    title="Change Password"
+                    bgColor="bg-red-500"
+                    shadow="shadow-red-300"
+                    textColor="text-white"
+                    link="/product"
+                  />
                 </div>
               </div>
             </div>

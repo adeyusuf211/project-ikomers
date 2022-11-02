@@ -1,4 +1,5 @@
 export { default as Alert } from "./alert";
+export { default as Button } from "./button";
 export { default as Blog } from "./blog";
 export { default as BlogDetail } from "./blog/detail";
 export { default as Cart } from "./cart";

@@ -4,7 +4,7 @@ const order = () => {
   return (
     <>
       <MetaData 
-        title="YOur Order"
+        title="Your Order"
         content="Order pages"
       />
       <Navbar />

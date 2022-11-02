@@ -60,7 +60,7 @@ const Register = () => {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,
                 soluta.
               </p>
-              <button className="p-3 w-full bg-blue-600 text-white font-semibold rounded-xl my-5 text-xl shadow-lg shadow-blue-300 hover:shadow-none transition-all duration-300 ease-linear">
+              <button className="p-3 w-full bg-blue-600 text-white font-semibold my-5 text-xl shadow-lg shadow-blue-300 hover:shadow-none transition-all duration-300 ease-linear">
                 Sign Up
               </button>
               <h3 className="font-semibold text-gray-800 text-center">

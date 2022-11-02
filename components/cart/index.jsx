@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Button from "../button";
 
 const Cart = () => {
   return (
@@ -6,7 +6,11 @@ const Cart = () => {
       <div className="w-full h-full bg-gray-100 py-5 px-5 lg:px-[150px] lg:mb-0 mb-20">
         <div className="block bg-white p-5 mb-5 ring-2 ring-red-500">
           <div className="flex gap-3 relative">
-            <img src="../images/icons/cross.svg" alt="icons" className="absolute -top-7 -right-7 w-6 h-6" />
+            <img
+              src="../images/icons/cross.svg"
+              alt="icons"
+              className="absolute -top-7 -right-7 w-6 h-6"
+            />
             <img
               src="../images/banner.webp"
               alt="gambar"
@@ -36,7 +40,11 @@ const Cart = () => {
         </div>
         <div className="block bg-white p-5 mb-5">
           <div className="flex gap-3 relative">
-            <img src="../images/icons/cross.svg" alt="icons" className="absolute -top-7 -right-7 w-6 h-6" />
+            <img
+              src="../images/icons/cross.svg"
+              alt="icons"
+              className="absolute -top-7 -right-7 w-6 h-6"
+            />
             <img
               src="../images/art.webp"
               alt="gambar"
@@ -66,7 +74,11 @@ const Cart = () => {
         </div>
         <div className="block bg-white p-5 mb-5">
           <div className="flex gap-3 relative">
-            <img src="../images/icons/cross.svg" alt="icons" className="absolute -top-7 -right-7 w-6 h-6" />
+            <img
+              src="../images/icons/cross.svg"
+              alt="icons"
+              className="absolute -top-7 -right-7 w-6 h-6"
+            />
             <img
               src="../images/design.webp"
               alt="gambar"
@@ -96,9 +108,13 @@ const Cart = () => {
         </div>
         <div className="flex justify-between items-center bg-white p-5">
           <h3 className="font-bold text-gray-800 text-xl">Rp.300.000</h3>
-          <Link href="/checkout">
-            <button className="px-4 py-2 font-medium bg-red-500 text-white text-xl">Checkout</button>
-          </Link>
+          <Button
+            title="Checkout"
+            bgColor="bg-red-500"
+            shadow="shadow-red-300"
+            textColor="text-white"
+            link="/checkout"
+          />
         </div>
       </div>
     </>
