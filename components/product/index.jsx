@@ -1,6 +1,9 @@
 import Link from "next/link";
+import { useState } from "react";
 
 const Product = () => {
+  const [showModal, setShowModal]   = useState(false)
+
   return (
     <>
       <div className="px-5 lg:px-[150px] py-5 bg-gray-100">
@@ -18,9 +21,18 @@ const Product = () => {
           </h3>
           <div className="flex gap-3 items-center">
             <h3 className="font-bold text-gray-800">84</h3>
-            <div className="p-2 border border-gray-800 rounded-md">
+            <button
+              className="p-2 border border-gray-800 rounded-md relative"
+              onClick={() => setShowModal(!showModal)}
+            >
               <img src="../images/icons/filter.svg" alt="icons" />
-            </div>
+              {showModal ? (
+                <div className="flex flex-col absolute right-0 top-full w-[200px] p-3 bg-white z-10 rounded-md shadow-lg border border-gray-300 transition-all duration-500 ease-in mt-3">
+                  <a className="mr-3 mt-1 text-left hover:text-blue-600 transition-all duration-300 ease-in cursor-pointer">Latest Product</a>
+                  <a className="mr-3 mt-1 text-left hover:text-blue-600 transition-all duration-300 ease-in cursor-pointer">Popular Product</a>
+                </div>
+              ) : ""}
+            </button>
           </div>
         </div>
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 my-5">
