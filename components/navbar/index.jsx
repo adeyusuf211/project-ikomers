@@ -107,13 +107,13 @@ const Navbar = () => {
             {showMenu === true ? (
               <div className="flex flex-col absolute right-0 top-full w-[200px] p-3 bg-white z-10 rounded-md shadow-lg border border-gray-300 transition-all duration-500 ease-in mt-3">
                 <Link href="/auth">
-                  <a className="ml-3 mt-1 cursor-pointer">Login</a>
+                  <a className="ml-3 mt-1 cursor-pointer hover:text-blue-600 transtion-all duration-300 ease-in">Login</a>
                 </Link>
                 <Link href="/auth/register">
-                  <a className="ml-3 mt-1 cursor-pointer">Register</a>
+                  <a className="ml-3 mt-1 cursor-pointer hover:text-blue-600 transtion-all duration-300 ease-in">Register</a>
                 </Link>
                 <Link href="/user/profile">
-                  <a className="ml-3 mt-1 cursor-pointer">My Account</a>
+                  <a className="ml-3 mt-1 cursor-pointer hover:text-blue-600 transtion-all duration-300 ease-in">My Account</a>
                 </Link>
               </div>
             ) : (

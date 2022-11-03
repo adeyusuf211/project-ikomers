@@ -11,7 +11,7 @@ const Product = () => {
           <input
             type="text"
             className="w-full bg-transparent outline-none"
-            placeholder="search article..."
+            placeholder="search product..."
           />
           <img src="../images/icons/search.svg" alt="gambar" />
         </div>
