@@ -10,7 +10,9 @@ const Blog = () => {
             className="w-full bg-transparent outline-none"
             placeholder="search article..."
           />
-          <img src="../images/icons/search.svg" alt="gambar" />
+          <button className="outline-none bg-none">
+            <img src="../images/icons/search.svg" alt="gambar" />
+          </button>
         </div>
         <div className="flex gap-3 mt-6">
           <a href="#" className="font-medium text-gray-800">

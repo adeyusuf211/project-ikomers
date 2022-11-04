@@ -13,7 +13,9 @@ const Product = () => {
             className="w-full bg-transparent outline-none"
             placeholder="search product..."
           />
-          <img src="../images/icons/search.svg" alt="gambar" />
+          <button className="outline-none bg-none">
+            <img src="../images/icons/search.svg" alt="gambar" />
+          </button>
         </div>
         <div className="flex justify-between items-center">
           <h3 className="font-semibold text-gray-800 lg:text-2xl">
@@ -28,10 +30,16 @@ const Product = () => {
               <img src="../images/icons/filter.svg" alt="icons" />
               {showModal ? (
                 <div className="flex flex-col absolute right-0 top-full w-[200px] p-3 bg-white z-10 rounded-md shadow-lg border border-gray-300 transition-all duration-500 ease-in mt-3">
-                  <a className="mr-3 mt-1 text-left hover:text-blue-600 transition-all duration-300 ease-in cursor-pointer">Latest Product</a>
-                  <a className="mr-3 mt-1 text-left hover:text-blue-600 transition-all duration-300 ease-in cursor-pointer">Popular Product</a>
+                  <a className="mr-3 mt-1 text-left hover:text-blue-600 transition-all duration-300 ease-in cursor-pointer">
+                    Latest Product
+                  </a>
+                  <a className="mr-3 mt-1 text-left hover:text-blue-600 transition-all duration-300 ease-in cursor-pointer">
+                    Popular Product
+                  </a>
                 </div>
-              ) : ""}
+              ) : (
+                ""
+              )}
             </button>
           </div>
         </div>

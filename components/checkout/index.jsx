@@ -1,6 +1,10 @@
+import { useState } from 'react';
 import Button from '../button';
 
 const Checkout = () => {
+
+  const [shippingModal, setShippingModal]   = useState(false);
+
   return (
     <>
       <div className="w-full h-full px-5 py-5 lg:px-[150px] bg-gray-100 lg:mb-0 mb-20">
@@ -29,11 +33,35 @@ const Checkout = () => {
           </div>
           <hr className="w-full border-2 border-dashed border-green-600 my-5" />
           <div className="block my-5">
-            <div className="flex justify-between my-3">
+            <div className="flex justify-between my-3 relative">
               <h3 className="font-semibold text-xl text-gray-800">Shipping</h3>
-              <a href="#" className="text-md text-blue-500">
+              <a 
+                className="text-md text-blue-500 cursor-pointer"
+                onClick={() => setShippingModal(!shippingModal)}
+              >
                 Change
               </a>
+              <div className={`${shippingModal ? 'block' : 'hidden'} absolute right-0 top-full min-w-[200px] w-full max-h-[60vh] py-5 px-10 bg-white z-10 rounded-md shadow-lg border border-gray-300 transition-all duration-500 ease-in mt-3 overflow-y-auto`}>
+                <h3 className="text-2xl font-bold text-gray-70 my-3">Choose Delivery Service</h3>
+                <div className="flex flex-col gap-3">
+                  <a className="flex gap-3 cursor-pointer hover:text-blue-600 transtion-all duration-300 ease-in p-5 hover:bg-gray-100">
+                    <img src="../images/jne.webp" alt="jne" className='object-cover object-center w-34 h-16' />
+                    <div className="block">
+                      <h3 className="font-semibold text-gray-700 text-2xl">JNE EXPRESS</h3>
+                      <p className="text-gray-600 text-sm">Estimation time: 2 - 3 days</p>
+                    </div>
+                    <h3 className="font-medium text-md text-gray-600 ml-auto">Rp.15.000</h3>
+                  </a>
+                  <a className="flex gap-3 cursor-pointer hover:text-blue-600 transtion-all duration-300 ease-in p-5 hover:bg-gray-100">
+                    <img src="../images/jne.webp" alt="jne" className='object-cover object-center w-34 h-16' />
+                    <div className="block">
+                      <h3 className="font-semibold text-gray-700 text-2xl">JNE REGULER</h3>
+                      <p className="text-gray-600 text-sm">Estimation time: 3 - 5 days</p>
+                    </div>
+                    <h3 className="font-medium text-md text-gray-600 ml-auto">Rp.10.000</h3>
+                  </a>
+                </div>
+              </div>
             </div>
             <div className="flex gap-3 items-center">
               <img
