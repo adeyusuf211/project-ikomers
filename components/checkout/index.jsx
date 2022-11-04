@@ -44,21 +44,21 @@ const Checkout = () => {
               <div className={`${shippingModal ? 'block' : 'hidden'} absolute right-0 top-full min-w-[200px] w-full max-h-[60vh] py-5 px-10 bg-white z-10 rounded-md shadow-lg border border-gray-300 transition-all duration-500 ease-in mt-3 overflow-y-auto`}>
                 <h3 className="text-2xl font-bold text-gray-70 my-3">Choose Delivery Service</h3>
                 <div className="flex flex-col gap-3">
-                  <a className="flex gap-3 cursor-pointer hover:text-blue-600 transtion-all duration-300 ease-in p-5 hover:bg-gray-100">
+                  <a className="flex lg:flex-row flex-col gap-3 cursor-pointer hover:text-blue-600 transtion-all duration-300 ease-in p-5 hover:bg-gray-100">
                     <img src="../images/jne.webp" alt="jne" className='object-cover object-center w-34 h-16' />
-                    <div className="block">
+                    <div className="block lg:text-start text-center">
                       <h3 className="font-semibold text-gray-700 text-2xl">JNE EXPRESS</h3>
                       <p className="text-gray-600 text-sm">Estimation time: 2 - 3 days</p>
                     </div>
-                    <h3 className="font-medium text-md text-gray-600 ml-auto">Rp.15.000</h3>
+                    <h3 className="font-medium text-md text-gray-600 text-center lg:ml-auto">Rp.15.000</h3>
                   </a>
-                  <a className="flex gap-3 cursor-pointer hover:text-blue-600 transtion-all duration-300 ease-in p-5 hover:bg-gray-100">
+                  <a className="flex lg:flex-row flex-col gap-3 cursor-pointer hover:text-blue-600 transtion-all duration-300 ease-in p-5 hover:bg-gray-100">
                     <img src="../images/jne.webp" alt="jne" className='object-cover object-center w-34 h-16' />
-                    <div className="block">
+                    <div className="block lg:text-start text-center">
                       <h3 className="font-semibold text-gray-700 text-2xl">JNE REGULER</h3>
                       <p className="text-gray-600 text-sm">Estimation time: 3 - 5 days</p>
                     </div>
-                    <h3 className="font-medium text-md text-gray-600 ml-auto">Rp.10.000</h3>
+                    <h3 className="font-medium text-md text-gray-600 text-center lg:ml-auto">Rp.10.000</h3>
                   </a>
                 </div>
               </div>
