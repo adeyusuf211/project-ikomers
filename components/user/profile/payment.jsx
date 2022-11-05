@@ -5,8 +5,9 @@ import SideNav from "../../navbar/sidenav";
 
 const Payment = () => {
 
-  const [bank, setBank] = useState(false);
-  const [card, setCard] = useState(false);
+  const [bank, setBank]     = useState(false);
+  const [card, setCard]     = useState(false);
+  const [wallet, setWallet] = useState(false);
 
   return (
     <>
@@ -113,7 +114,7 @@ const Payment = () => {
                           </div>
                         </div>
                         <div className="flex items-center justify-between gap-3 w-full mt-10">
-                          <small className="font-medium lg:text-base text-[11px]">
+                          <small className="font-medium lg:text-sm text-[11px]">
                             By continuing, you agree to the{" "}
                             <a className="text-blue-700 cursor-pointer">
                               Privacy Policy
@@ -123,12 +124,9 @@ const Payment = () => {
                               Terms & Conditions.
                             </a>
                           </small>
-                          <Button
-                            bgColor="bg-blue-500"
-                            textColor="text-white"
-                            title="Save"
-                            link=""
-                          />
+                          <button className="ml-auto px-6 py-2 outline-none bg-red-500 text-white font-medium shadow-lg shadow-red-300 hover:shadow-none transition-all duration-500 ease-linear">
+                            Save
+                          </button>
                         </div>
                       </div>
                     </div>
@@ -277,9 +275,44 @@ const Payment = () => {
                     <h3 className="font-semibold text-gray-700 text-md">
                       Ewallet
                     </h3>
-                    <a href="#" className="text-blue-500 underline text-md">
+                    <a
+                      className="text-blue-500 underline text-md cursor-pointer"
+                      onClick={() => setWallet(!wallet)}
+                    >
                       Add Wallet
                     </a>
+                    <div
+                      className={`${
+                        wallet ? "flex" : "hidden"
+                      } justify-center items-center fixed top-0 left-0 w-full h-screen bg-gray-700 bg-opacity-80 overflow-y-auto z-[9999999999999999999] lg:p-0 px-5`}
+                    >
+                      <div className="flex flex-col gap-2 p-5 bg-white w-full lg:w-[50vw] rounded-lg">
+                        <span
+                          className="text-lg font-bold text-gray-800 hover:text-red-500 text-right cursor-pointer transition-all duration-500 ease-linear"
+                          onClick={() => setWallet(!wallet)}
+                        >
+                          X
+                        </span>
+                        <h3 className="font-semibold text-gray-700 text-lg text-center mb-10">
+                          Add E-Wallet
+                        </h3>
+                        <div className="flex gap-5">
+                          <img
+                            src="../../images/art.webp"
+                            alt="gambar"
+                            className="w-14 h-14"
+                          />
+                          <div className="flex flex-col">
+                            <h3 className="font-semibold text-gray-700 text-lg">
+                              PlayFoul
+                            </h3>
+                          </div>
+                        </div>
+                        <button className="ml-auto mt-10 px-6 py-2 outline-none bg-red-500 text-white font-medium shadow-lg shadow-red-300 hover:shadow-none transition-all duration-500 ease-linear">
+                          Add New E-Wallet
+                        </button>
+                      </div>
+                    </div>
                   </div>
                   <div className="flex gap-3">
                     <img
