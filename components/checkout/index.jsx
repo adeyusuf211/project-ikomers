@@ -4,6 +4,8 @@ import Button from '../button';
 const Checkout = () => {
 
   const [shippingModal, setShippingModal]   = useState(false);
+  const [paymentModal, setPaymentModal]     = useState(false);
+  const [click, setClick]                   = useState(false)
 
   return (
     <>
@@ -35,30 +37,56 @@ const Checkout = () => {
           <div className="block my-5">
             <div className="flex justify-between my-3 relative">
               <h3 className="font-semibold text-xl text-gray-800">Shipping</h3>
-              <a 
+              <a
                 className="text-md text-blue-500 cursor-pointer"
                 onClick={() => setShippingModal(!shippingModal)}
               >
                 Change
               </a>
-              <div className={`${shippingModal ? 'block' : 'hidden'} absolute right-0 top-full min-w-[200px] w-full max-h-[60vh] py-5 px-10 bg-white z-10 rounded-md shadow-lg border border-gray-300 transition-all duration-500 ease-in mt-3 overflow-y-auto`}>
-                <h3 className="text-2xl font-bold text-gray-70 my-3">Choose Delivery Service</h3>
+              <div
+                className={`${
+                  shippingModal ? "block" : "hidden"
+                } absolute right-0 top-full min-w-[200px] w-full max-h-[60vh] py-5 px-10 bg-white z-10 rounded-md shadow-lg border border-gray-300 transition-all duration-500 ease-in mt-3 overflow-y-auto`}
+              >
+                <h3 className="text-2xl font-bold text-gray-70 my-3 lg:text-start text-center">
+                  Choose Delivery Service
+                </h3>
                 <div className="flex flex-col gap-3">
                   <a className="flex lg:flex-row flex-col gap-3 cursor-pointer hover:text-blue-600 transtion-all duration-300 ease-in p-5 hover:bg-gray-100">
-                    <img src="../images/jne.webp" alt="jne" className='object-cover object-center w-34 h-16' />
+                    <img
+                      src="../images/jne.webp"
+                      alt="jne"
+                      className="object-cover object-center w-34 h-16"
+                    />
                     <div className="block lg:text-start text-center">
-                      <h3 className="font-semibold text-gray-700 text-2xl">JNE EXPRESS</h3>
-                      <p className="text-gray-600 text-sm">Estimation time: 2 - 3 days</p>
+                      <h3 className="font-semibold text-gray-700 text-2xl">
+                        JNE EXPRESS
+                      </h3>
+                      <p className="text-gray-600 text-sm">
+                        Estimation time: 2 - 3 days
+                      </p>
                     </div>
-                    <h3 className="font-medium text-md text-gray-600 text-center lg:ml-auto">Rp.15.000</h3>
+                    <h3 className="font-medium text-md text-gray-600 text-center lg:ml-auto">
+                      Rp.15.000
+                    </h3>
                   </a>
                   <a className="flex lg:flex-row flex-col gap-3 cursor-pointer hover:text-blue-600 transtion-all duration-300 ease-in p-5 hover:bg-gray-100">
-                    <img src="../images/jne.webp" alt="jne" className='object-cover object-center w-34 h-16' />
+                    <img
+                      src="../images/jne.webp"
+                      alt="jne"
+                      className="object-cover object-center w-34 h-16"
+                    />
                     <div className="block lg:text-start text-center">
-                      <h3 className="font-semibold text-gray-700 text-2xl">JNE REGULER</h3>
-                      <p className="text-gray-600 text-sm">Estimation time: 3 - 5 days</p>
+                      <h3 className="font-semibold text-gray-700 text-2xl">
+                        JNE REGULER
+                      </h3>
+                      <p className="text-gray-600 text-sm">
+                        Estimation time: 3 - 5 days
+                      </p>
                     </div>
-                    <h3 className="font-medium text-md text-gray-600 text-center lg:ml-auto">Rp.10.000</h3>
+                    <h3 className="font-medium text-md text-gray-600 text-center lg:ml-auto">
+                      Rp.10.000
+                    </h3>
                   </a>
                 </div>
               </div>
@@ -78,11 +106,94 @@ const Checkout = () => {
             </div>
           </div>
           <div className="block my-5">
-            <div className="flex justify-between my-3">
+            <div className="flex justify-between my-3 relative">
               <h3 className="font-semibold text-xl text-gray-800">Payment</h3>
-              <a href="#" className="text-md text-blue-500">
+              <a
+                className="text-md text-blue-500 cursor-pointer"
+                onClick={() => setPaymentModal(!paymentModal)}
+              >
                 Change
               </a>
+              <div
+                className={`${
+                  paymentModal ? "block" : "hidden"
+                } absolute right-0 top-full min-w-[200px] w-full max-h-[60vh] py-5 px-10 bg-white z-10 rounded-md shadow-lg border border-gray-300 transition-all duration-500 ease-in mt-3 overflow-y-auto`}
+              >
+                <h3 className="text-2xl font-bold text-gray-70 my-3 lg:text-start text-center">
+                  Choose Payment Method
+                </h3>
+                <div className="flex flex-col gap-1 mb-5">
+                  <div className="flex flex-col gap-1 mb-5">
+                    <h3 className="font-semibold text-lg text-gray-70">
+                      COD (Cash On Delivery)
+                    </h3>
+                    <a className="flex lg:flex-row gap-3">
+                      <div
+                        className={`w-full border border-blue-200 p-3 cursor-pointer ${
+                          click ? "bg-blue-100" : ""
+                        } hover:bg-blue-100 transition-all duration-500 ease-in`}
+                        onClick={() => setClick(!click)}
+                      >
+                        <h3 className="text-gray-500 text-sm lg:text-md font-medium">
+                          Please make payment when a goods has arrived.
+                        </h3>
+                      </div>
+                    </a>
+                  </div>
+                  <h3 className="font-semibold text-lg text-gray-70">
+                    Credit / Debit Card
+                  </h3>
+                  <a className="flex lg:flex-row lg:flex-nowrap flex-wrap gap-3">
+                    <img
+                      src="../images/visa.webp"
+                      alt="jne"
+                      className="object-cover object-center w-34 h-10 lg:h-16 cursor-pointer hover:opacity-50 transition-all duration-500 ease-linear"
+                    />
+                    <img
+                      src="../images/visa.webp"
+                      alt="jne"
+                      className="object-cover object-center w-34 h-10 lg:h-16 cursor-pointer hover:opacity-50 transition-all duration-500 ease-linear"
+                    />
+                    <img
+                      src="../images/visa.webp"
+                      alt="jne"
+                      className="object-cover object-center w-34 h-10 lg:h-16 cursor-pointer hover:opacity-50 transition-all duration-500 ease-linear"
+                    />
+                  </a>
+                </div>
+                <div className="flex flex-col gap-1 mb-5">
+                  <h3 className="font-semibold text-lg text-gray-70">
+                    E-Wallet
+                  </h3>
+                  <a className="flex lg:flex-row lg:flex-nowrap flex-wrap gap-3">
+                    <img
+                      src="../images/visa.webp"
+                      alt="jne"
+                      className="object-cover object-center w-34 h-10 lg:h-16 cursor-pointer hover:opacity-50 transition-all duration-500 ease-linear"
+                    />
+                    <img
+                      src="../images/visa.webp"
+                      alt="jne"
+                      className="object-cover object-center w-34 h-10 lg:h-16 cursor-pointer hover:opacity-50 transition-all duration-500 ease-linear"
+                    />
+                    <img
+                      src="../images/visa.webp"
+                      alt="jne"
+                      className="object-cover object-center w-34 h-10 lg:h-16 cursor-pointer hover:opacity-50 transition-all duration-500 ease-linear"
+                    />
+                    <img
+                      src="../images/visa.webp"
+                      alt="jne"
+                      className="object-cover object-center w-34 h-10 lg:h-16 cursor-pointer hover:opacity-50 transition-all duration-500 ease-linear"
+                    />
+                    <img
+                      src="../images/visa.webp"
+                      alt="jne"
+                      className="object-cover object-center w-34 h-10 lg:h-16 cursor-pointer hover:opacity-50 transition-all duration-500 ease-linear"
+                    />
+                  </a>
+                </div>
+              </div>
             </div>
             <div className="flex gap-3 items-center">
               <img
