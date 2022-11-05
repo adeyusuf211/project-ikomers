@@ -6,6 +6,7 @@ import SideNav from "../../navbar/sidenav";
 const Payment = () => {
 
   const [bank, setBank] = useState(false);
+  const [card, setCard] = useState(false);
 
   return (
     <>
@@ -50,14 +51,14 @@ const Payment = () => {
                     <div
                       className={`${
                         bank ? "flex" : "hidden"
-                      } justify-center items-center fixed top-0 left-0 w-full h-screen bg-gray-700 bg-opacity-80 overflow-y-auto z-[9999999999999999999]`}
+                      } justify-center items-center fixed top-0 left-0 w-full h-screen bg-gray-700 bg-opacity-80 overflow-y-auto z-[9999999999999999999] lg:p-0 px-5`}
                     >
-                      <div className="flex flex-col gap-2 p-5 bg-white max-w-[50vw] w-full rounded-lg">
-                        <span 
+                      <div className="flex flex-col gap-2 p-5 bg-white w-full lg:w-[50vw] rounded-lg">
+                        <span
                           className="text-lg font-bold text-gray-800 hover:text-red-500 text-right cursor-pointer transition-all duration-500 ease-linear"
                           onClick={() => setBank(!bank)}
                         >
-                            X
+                          X
                         </span>
                         <h3 className="font-semibold text-gray-700 text-lg text-center mb-10">
                           Add a New Bank
@@ -101,18 +102,18 @@ const Payment = () => {
                           <div className="flex w-full gap-3">
                             <input
                               type="number"
-                              className="outline-none border border-gray-600 px-2 focus:border focus:border-green-500 w-[78%]"
+                              className="outline-none border border-gray-600 px-2 focus:border focus:border-green-500 w-full"
                             />
                             <Button
                               bgColor="bg-red-500"
                               textColor="text-white"
-                              title="Add Bank"
+                              title="Add"
                               link=""
                             />
                           </div>
                         </div>
                         <div className="flex items-center justify-between gap-3 w-full mt-10">
-                          <small className="font-medium">
+                          <small className="font-medium lg:text-base text-[11px]">
                             By continuing, you agree to the{" "}
                             <a className="text-blue-700 cursor-pointer">
                               Privacy Policy
@@ -159,9 +160,95 @@ const Payment = () => {
                     <h3 className="font-semibold text-gray-700 text-md">
                       Debit / Credit Card
                     </h3>
-                    <a href="#" className="text-blue-500 underline text-md">
+                    <a
+                      className="text-blue-500 underline text-md cursor-pointer"
+                      onClick={() => setCard(!card)}
+                    >
                       Add Card
                     </a>
+                    <div
+                      className={`${
+                        card ? "flex" : "hidden"
+                      } justify-center items-center fixed top-0 left-0 w-full h-screen bg-gray-700 bg-opacity-80 overflow-y-auto z-[9999999999999999999] lg:p-0 px-5`}
+                    >
+                      <div className="flex flex-col gap-2 p-5 bg-white w-full lg:w-[50vw] lg:max-w-[50vw]W rounded-lg">
+                        <span
+                          className="text-lg font-bold text-gray-800 hover:text-red-500 text-right cursor-pointer transition-all duration-500 ease-linear"
+                          onClick={() => setCard(!card)}
+                        >
+                          X
+                        </span>
+                        <h3 className="font-semibold text-gray-700 text-lg text-center mb-10">
+                          Add a New Credit / Debit Card
+                        </h3>
+                        <div className="mb-3 gap-2 flex w-full">
+                          <div className="flex flex-col gap-1 w-full">
+                            <label htmlFor="no" className="font-medium">
+                              First Name
+                            </label>
+                            <input
+                              type="text"
+                              className="outline-none border border-gray-600 p-2 focus:border focus:border-green-500 w-full"
+                            />
+                          </div>
+                          <div className="flex flex-col gap-1 w-full">
+                            <label htmlFor="no" className="font-medium">
+                              Last Name
+                            </label>
+                            <input
+                              type="text"
+                              className="outline-none border border-gray-600 p-2 focus:border focus:border-green-500 w-full"
+                            />
+                          </div>
+                        </div>
+                        <div className="mb-3 gap-2 flex w-full">
+                          <div className="flex items-center gap-5">
+                            <div className="flex flex-col gap-1">
+                              <label
+                                htmlFor="fdsafads"
+                                className="text-sm font-medium text-gray-700"
+                              >
+                                Number
+                              </label>
+                              <input
+                                type="text"
+                                className="outline-none w-full border p-2 focus:border focus:border-green-500 border-gray-600 text-md"
+                                maxLength="16"
+                              />
+                            </div>
+                            <div className="flex flex-col gap-1">
+                              <label
+                                htmlFor="fdsafads"
+                                className="text-sm font-medium text-gray-700"
+                              >
+                                MM/YY
+                              </label>
+                              <input
+                                type="text"
+                                className="outline-none w-full border p-2 focus:border focus:border-green-500 border-gray-600 text-md"
+                                maxLength="5"
+                              />
+                            </div>
+                            <div className="flex flex-col gap-1">
+                              <label
+                                htmlFor="fdsafads"
+                                className="text-sm font-medium text-gray-700"
+                              >
+                                CVV
+                              </label>
+                              <input
+                                type="text"
+                                className="outline-none w-full border p-2 focus:border focus:border-green-500 border-gray-600 text-md"
+                                maxLength="3"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <button className="ml-auto mt-10 px-6 py-2 outline-none bg-red-500 text-white font-medium shadow-lg shadow-red-300 hover:shadow-none transition-all duration-500 ease-linear">
+                          Add New Card
+                        </button>
+                      </div>
+                    </div>
                   </div>
                   <div className="my-2 flex gap-3">
                     <img
