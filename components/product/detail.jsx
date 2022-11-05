@@ -1,8 +1,6 @@
 import { useState } from "react";
 
 const ProductDetail = () => {
-
-  const [showModal, setShowModal]   = useState(false);
   const [isHover, setIsHover]       = useState(false);
 
   const mouseMove = (e) => {
@@ -16,7 +14,7 @@ const ProductDetail = () => {
 
   return (
     <>
-      <div className="w-full h-full px-5 lg:px-[150px] mb-10 bg-gray-100 py-10">
+      <div className="w-full h-full px-5 lg:px-[150px] mb-10 bg-gray-100 py-10 relative">
         <div className="lg:flex lg:gap-10 block relative">
           <div
             className="lg:w-[40%] lg:h-full lg:sticky lg:top-5 overflow-hidden"
@@ -87,7 +85,7 @@ const ProductDetail = () => {
                 <span className="font-semibold text-blue-600">2900 Likes</span>
               </div>
             </div>
-            <div className="my-3 block">
+            <div className="my-5 block">
               <h3 className="font-bold text-gray-600">Select Color:</h3>
               <div className="flex gap-2 mt-2">
                 <button className="px-4 py-2 border border-gray-500 text-gray-500 font-medium">
@@ -148,7 +146,12 @@ const ProductDetail = () => {
               <button type="button" className="border border-gray-500 p-3">
                 <img src="../images/icons/cart.svg" alt=" gambar" />
               </button>
-              <button className="bg-green-500 text-white font-medium px-10">Buy Now</button>
+              <button 
+                className="bg-red-500 text-white font-medium px-10"
+                onClick={() => setShowModal(!showModal)}
+              >
+                Buy Now
+              </button>
             </div>
           </div>
         </div>
