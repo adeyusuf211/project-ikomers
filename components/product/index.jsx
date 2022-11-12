@@ -12,13 +12,17 @@ const Product = () => {
   const searchProduct = () => {
     fetch(`https://dummyjson.com/products/search?q=${search}`)
       .then((res) => res.json())
-      .then((data) => setProduct(data.products));
+      .then((data) => {
+        setProduct(data.products)
+      });
   }
 
   useEffect(() => {
     fetch("https://dummyjson.com/products")
       .then((res) => res.json())
-      .then((data) => setProduct(data.products));
+      .then((data) => {
+        setProduct(data.products)
+      });
   }, []);
 
   return (
@@ -82,7 +86,7 @@ const Product = () => {
                     {hasil.category}
                   </span>
                 </div>
-                <div className="lg:p-5 p-3">
+                <div className="lg:p-5 p-">
                   <span className="text-sm text-gray-600">{hasil.title}</span>
                   <h3 className="font-bold text-md lg:text-xl text-gray-800">
                     Rp {parseInt(hasil.price * 15000).toLocaleString("id-ID")}

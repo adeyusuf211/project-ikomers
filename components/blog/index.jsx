@@ -167,6 +167,57 @@ const Blog = () => {
                 </div>
               </div>
             </Link>
+            <Link href="/blog/detail">
+              <div className="flex gap-3 bg-white p-3 my-3 cursor-pointer">
+                <img
+                  src="../images/banner.webp"
+                  alt="gambar"
+                  className="lg:w-40 lg:h-40 w-20 h-20 object-cover object-center"
+                />
+                <div className="block">
+                  <h3 className="font-bold text-gray-800 lg:text-4xl lg:mb-2">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing.
+                  </h3>
+                  <span className="text-sm font-medium text-gray-500 mt-2 lg:text-2xl">
+                    Political | 2 Month Ago | John Doe
+                  </span>
+                </div>
+              </div>
+            </Link>
+            <Link href="/blog/detail">
+              <div className="flex gap-3 bg-white p-3 my-3 cursor-pointer">
+                <img
+                  src="../images/design.webp"
+                  alt="gambar"
+                  className="lg:w-40 lg:h-40 w-20 h-20 object-cover object-center"
+                />
+                <div className="block">
+                  <h3 className="font-bold text-gray-800 lg:text-4xl lg:mb-2">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, ea!
+                  </h3>
+                  <span className="text-sm font-medium text-gray-500 mt-2 lg:text-2xl">
+                    Political | 2 Month Ago | John Doe
+                  </span>
+                </div>
+              </div>
+            </Link>
+            <Link href="/blog/detail">
+              <div className="flex gap-3 bg-white p-3 my-3 cursor-pointer">
+                <img
+                  src="../images/technology.webp"
+                  alt="gambar"
+                  className="lg:w-40 lg:h-40 w-20 h-20 object-cover object-center"
+                />
+                <div className="block">
+                  <h3 className="font-bold text-gray-800 lg:text-4xl lg:mb-2">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore!
+                  </h3>
+                  <span className="text-sm font-medium text-gray-500 mt-2 lg:text-2xl">
+                    Political | 2 Month Ago | John Doe
+                  </span>
+                </div>
+              </div>
+            </Link>
           </div>
           <div className="block lg:mb-0 mb-20 p-5 lg:w-[40%] w-full h-full bg-white lg:sticky lg:top-0">
             <h3 className="font-bold text-xl text-gray-700">Recent Post</h3>
