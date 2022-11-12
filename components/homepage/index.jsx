@@ -40,9 +40,9 @@ const Homepage = () => {
                       {hasil.category}
                     </span>
                   </div>
-                  <div className="p-5">
+                  <div className="lg:p-5 p-3">
                     <span className="text-sm text-gray-600">{hasil.title}</span>
-                    <h3 className="font-bold text-xl text-gray-800">
+                    <h3 className="font-bold text-md lg:text-xl text-gray-800">
                       Rp {parseInt(hasil.price * 15000).toLocaleString('id-ID')}
                     </h3>
                     <div className="flex justify-between items-center mt-3">
