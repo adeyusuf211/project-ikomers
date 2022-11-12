@@ -1,19 +1,41 @@
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import Category from "../category";
 
 const Product = () => {
-  const [showModal, setShowModal]   = useState(false)
+  const [showModal, setShowModal]   = useState(false);
+  const [likes, setLikes]           = useState(false);
+  const [countLike, setCountLike]   = useState(500);
+  const [search, setSearch]         = useState('');
+  const [product, setProduct]       = useState([]);
+
+  const searchProduct = () => {
+    fetch(`https://dummyjson.com/products/search?q=${search}`)
+      .then((res) => res.json())
+      .then((data) => setProduct(data.products));
+  }
+
+  useEffect(() => {
+    fetch("https://dummyjson.com/products")
+      .then((res) => res.json())
+      .then((data) => setProduct(data.products));
+  }, []);
 
   return (
     <>
       <div className="px-5 lg:px-[150px] py-5 bg-gray-100">
+        <Category />
         <div className="flex justify-between gap-3 p-5 rounded-xl bg-white mb-5">
           <input
             type="text"
             className="w-full bg-transparent outline-none"
             placeholder="search product..."
+            onInput={(e) => setSearch(e.target.value)}
           />
-          <button className="outline-none bg-none">
+          <button 
+            className="outline-none bg-none"
+            onClick={() => searchProduct()}
+          >
             <img src="../images/icons/search.svg" alt="gambar" />
           </button>
         </div>
@@ -22,7 +44,7 @@ const Product = () => {
             Latest Product
           </h3>
           <div className="flex gap-3 items-center">
-            <h3 className="font-bold text-gray-800">84</h3>
+            <h3 className="font-bold text-gray-800">{ product.length }</h3>
             <button
               className="p-2 border border-gray-800 rounded-md relative"
               onClick={() => setShowModal(!showModal)}
@@ -44,270 +66,51 @@ const Product = () => {
           </div>
         </div>
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 my-5">
-          <Link href="/product/detail">
-            <div className="relative">
-              <div className="relative">
-                <img
-                  src="../images/furniture1.webp"
-                  alt="product"
-                  className="rounded-2xl w-fit"
-                />
-                <span className="absolute top-3 left-3 text-gray-700 text-sm">
-                  Furniture
-                </span>
-              </div>
-              <div className="py-5 px-2">
-                <span className="text-sm text-gray-600">campuranstore</span>
-                <h3 className="font-bold text-xl text-gray-800">Rp.300.000</h3>
-                <div className="flex justify-between items-center mt-3">
-                  <a href="#" className="text-blue-500 font-semibold text-sm">
-                    Add to cart
-                  </a>
-                  <div className="flex items-center gap-1">
-                    <img
-                      src="../images/icons/love.svg"
-                      alt="icon"
-                      className="w-4"
-                    />
-                    <span className="font-medium text-gray-700 text-sm">
-                      500
-                    </span>
+          {product.map((hasil) => (
+            <Link href={`/product/detail/${hasil.title}`} key={hasil.id}>
+              <div
+                className="relative border border-gray-300 cursor-pointer hover:shadow-lg hover:shadow-gray-300 transition-all duration-300 ease-linear"
+                key={hasil.id}
+              >
+                <div className="relative">
+                  <img
+                    src={hasil.images[0]}
+                    alt={hasil.title}
+                    className="w-fit h-48 object-cover object-center"
+                  />
+                  <span className="absolute top-3 left-3 text-gray-700 text-sm">
+                    {hasil.category}
+                  </span>
+                </div>
+                <div className="p-5">
+                  <span className="text-sm text-gray-600">{hasil.title}</span>
+                  <h3 className="font-bold text-xl text-gray-800">
+                    Rp {parseInt(hasil.price * 15000).toLocaleString("id-ID")}
+                  </h3>
+                  <div className="flex justify-between items-center mt-3">
+                    <a href="#" className="text-blue-500 font-semibold text-sm">
+                      Add to cart
+                    </a>
+                    <div className="flex items-center gap-1 cursor-pointer">
+                      <img
+                        src={
+                          likes
+                            ? "../images/icons/love-pink-fill.svg"
+                            : "../images/icons/love.svg"
+                        }
+                        alt="icon"
+                        className="w-4"
+                        onClick={() => setLikes(!likes)}
+                      />
+                      <span className="font-medium text-gray-700 text-sm">
+                        {!likes ? countLike : countLike + 1}
+                      </span>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </Link>
-          <Link href="/product/detail">
-            <div className="relative">
-              <div className="relative">
-                <img
-                  src="../images/furniture2.webp"
-                  alt="product"
-                  className="rounded-2xl w-fit"
-                />
-                <span className="absolute top-3 left-3 text-gray-700 text-sm">
-                  Furniture
-                </span>
-              </div>
-              <div className="py-5 px-2">
-                <span className="text-sm text-gray-600">campuranstore</span>
-                <h3 className="font-bold text-xl text-gray-800">Rp.500.000</h3>
-                <div className="flex justify-between items-center mt-3">
-                  <a href="#" className="text-blue-500 font-semibold text-sm">
-                    Add to cart
-                  </a>
-                  <div className="flex items-center gap-1">
-                    <img
-                      src="../images/icons/love.svg"
-                      alt="icon"
-                      className="w-4"
-                    />
-                    <span className="font-medium text-gray-700 text-sm">
-                      300
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </Link>
-          <Link href="/product/detail">
-            <div className="relative">
-              <div className="relative">
-                <img
-                  src="../images/furniture3.webp"
-                  alt="product"
-                  className="rounded-2xl w-fit"
-                />
-                <span className="absolute top-3 left-3 text-gray-700 text-sm">
-                  Furniture
-                </span>
-              </div>
-              <div className="py-5 px-2">
-                <span className="text-sm text-gray-600">campuranstore</span>
-                <h3 className="font-bold text-xl text-gray-800">Rp.300.000</h3>
-                <div className="flex justify-between items-center mt-3">
-                  <a href="#" className="text-blue-500 font-semibold text-sm">
-                    Add to cart
-                  </a>
-                  <div className="flex items-center gap-1">
-                    <img
-                      src="../images/icons/love.svg"
-                      alt="icon"
-                      className="w-4"
-                    />
-                    <span className="font-medium text-gray-700 text-sm">
-                      500
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </Link>
-          <Link href="/product/detail">
-            <div className="relative">
-              <div className="relative">
-                <img
-                  src="../images/furniture4.webp"
-                  alt="product"
-                  className="rounded-2xl w-fit"
-                />
-                <span className="absolute top-3 left-3 text-gray-700 text-sm">
-                  Furniture
-                </span>
-              </div>
-              <div className="py-5 px-2">
-                <span className="text-sm text-gray-600">campuranstore</span>
-                <h3 className="font-bold text-xl text-gray-800">Rp.500.000</h3>
-                <div className="flex justify-between items-center mt-3">
-                  <a href="#" className="text-blue-500 font-semibold text-sm">
-                    Add to cart
-                  </a>
-                  <div className="flex items-center gap-1">
-                    <img
-                      src="../images/icons/love.svg"
-                      alt="icon"
-                      className="w-4"
-                    />
-                    <span className="font-medium text-gray-700 text-sm">
-                      300
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </Link>
-          <Link href="/product/detail">
-            <div className="relative">
-              <div className="relative">
-                <img
-                  src="../images/furniture1.webp"
-                  alt="product"
-                  className="rounded-2xl w-fit"
-                />
-                <span className="absolute top-3 left-3 text-gray-700 text-sm">
-                  Furniture
-                </span>
-              </div>
-              <div className="py-5 px-2">
-                <span className="text-sm text-gray-600">campuranstore</span>
-                <h3 className="font-bold text-xl text-gray-800">Rp.300.000</h3>
-                <div className="flex justify-between items-center mt-3">
-                  <a href="#" className="text-blue-500 font-semibold text-sm">
-                    Add to cart
-                  </a>
-                  <div className="flex items-center gap-1">
-                    <img
-                      src="../images/icons/love.svg"
-                      alt="icon"
-                      className="w-4"
-                    />
-                    <span className="font-medium text-gray-700 text-sm">
-                      500
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </Link>
-          <Link href="/product/detail">
-            <div className="relative">
-              <div className="relative">
-                <img
-                  src="../images/furniture2.webp"
-                  alt="product"
-                  className="rounded-2xl w-fit"
-                />
-                <span className="absolute top-3 left-3 text-gray-700 text-sm">
-                  Furniture
-                </span>
-              </div>
-              <div className="py-5 px-2">
-                <span className="text-sm text-gray-600">campuranstore</span>
-                <h3 className="font-bold text-xl text-gray-800">Rp.500.000</h3>
-                <div className="flex justify-between items-center mt-3">
-                  <a href="#" className="text-blue-500 font-semibold text-sm">
-                    Add to cart
-                  </a>
-                  <div className="flex items-center gap-1">
-                    <img
-                      src="../images/icons/love.svg"
-                      alt="icon"
-                      className="w-4"
-                    />
-                    <span className="font-medium text-gray-700 text-sm">
-                      300
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </Link>
-          <Link href="/product/detail">
-            <div className="relative">
-              <div className="relative">
-                <img
-                  src="../images/furniture3.webp"
-                  alt="product"
-                  className="rounded-2xl w-fit"
-                />
-                <span className="absolute top-3 left-3 text-gray-700 text-sm">
-                  Furniture
-                </span>
-              </div>
-              <div className="py-5 px-2">
-                <span className="text-sm text-gray-600">campuranstore</span>
-                <h3 className="font-bold text-xl text-gray-800">Rp.300.000</h3>
-                <div className="flex justify-between items-center mt-3">
-                  <a href="#" className="text-blue-500 font-semibold text-sm">
-                    Add to cart
-                  </a>
-                  <div className="flex items-center gap-1">
-                    <img
-                      src="../images/icons/love.svg"
-                      alt="icon"
-                      className="w-4"
-                    />
-                    <span className="font-medium text-gray-700 text-sm">
-                      500
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </Link>
-          <Link href="/product/detail">
-            <div className="relative">
-              <div className="relative">
-                <img
-                  src="../images/furniture4.webp"
-                  alt="product"
-                  className="rounded-2xl w-fit"
-                />
-                <span className="absolute top-3 left-3 text-gray-700 text-sm">
-                  Furniture
-                </span>
-              </div>
-              <div className="py-5 px-2">
-                <span className="text-sm text-gray-600">campuranstore</span>
-                <h3 className="font-bold text-xl text-gray-800">Rp.500.000</h3>
-                <div className="flex justify-between items-center mt-3">
-                  <a href="#" className="text-blue-500 font-semibold text-sm">
-                    Add to cart
-                  </a>
-                  <div className="flex items-center gap-1">
-                    <img
-                      src="../images/icons/love.svg"
-                      alt="icon"
-                      className="w-4"
-                    />
-                    <span className="font-medium text-gray-700 text-sm">
-                      300
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </Link>
+            </Link>
+          ))}
         </div>
         <div className="my-5 flex gap-3 bg-blue-200 p-5 rounded-lg lg:my-10">
           <div className="block w-full lg:py-5 text-center">
