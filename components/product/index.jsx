@@ -1,34 +1,63 @@
 import Link from "next/link";
 import { useState, useEffect } from "react";
-import Category from "../category";
 
 const Product = () => {
-  const [showModal, setShowModal]   = useState(false);
-  const [likes, setLikes]           = useState(false);
-  const [countLike, setCountLike]   = useState(500);
-  const [search, setSearch]         = useState('');
-  const [product, setProduct]       = useState([]);
+  const [showModal, setShowModal]     = useState(false);
+  const [likes, setLikes]             = useState(false);
+  const [loading, setLoading]         = useState(false);
+  const [countLike, setCountLike]     = useState(500);
+  const [search, setSearch]           = useState('');
+  const [product, setProduct]         = useState([]);
+  const [categories, setCategories]   = useState([]);
 
-  const searchProduct = () => {
-    fetch(`https://dummyjson.com/products/search?q=${search}`)
-      .then((res) => res.json())
-      .then((data) => {
-        setProduct(data.products)
-      });
+  const searchProduct = async () => {
+    setLoading(true);
+    const api   = await fetch(`https://dummyjson.com/products/search?q=${search}`);
+    const data  = await api.json();
+    setProduct(data.products);
+    setLoading(false);
+  }
+
+  const filterByCategory = async (category) => {
+    setLoading(true);
+    const api   = await fetch(`https://dummyjson.com/products/category/${category}`)
+    const data  = await api.json();
+    setProduct(data.products);
+    setLoading(false);
   }
 
   useEffect(() => {
-    fetch("https://dummyjson.com/products")
+    fetch("https://dummyjson.com/products/categories")
+      .then((res) => res.json())
+      .then((data) => setCategories(data));
+  }, []);
+
+  useEffect(() => {
+    setLoading(true);
+    fetch("https://dummyjson.com/products?limit=100")
       .then((res) => res.json())
       .then((data) => {
         setProduct(data.products)
+        setLoading(false)
       });
   }, []);
 
   return (
     <>
       <div className="px-5 lg:px-[150px] py-5 bg-gray-100">
-        <Category />
+        <div className="w-full h-full lg:px-[150px] px-5 flex lg:justify-center gap-5 lg:overflow-y-hidden overflow-y-auto hidden-scrollbar">
+            {categories.map((category, i) => (
+                <div 
+                    className="flex flex-col items-center justify-center gap-1 cursor-pointer text-center" 
+                    onClick={() => filterByCategory(category)}
+                    key={i}>
+                    <div className="w-14 h-14 rounded-full bg-gray-300 flex justify-center items-center">
+                        <img src="../images/icons/calendar.svg" alt="gambar" />
+                    </div>
+                    <h3 className="font-medium text-gray-600 text-sm p-3">{ category }</h3>
+                </div>
+            ))}
+        </div>
         <div className="flex justify-between gap-3 p-5 rounded-xl bg-white mb-5">
           <input
             type="text"
@@ -36,7 +65,7 @@ const Product = () => {
             placeholder="search product..."
             onInput={(e) => setSearch(e.target.value)}
           />
-          <button 
+          <button
             className="outline-none bg-none"
             onClick={() => searchProduct()}
           >
@@ -48,7 +77,7 @@ const Product = () => {
             Latest Product
           </h3>
           <div className="flex gap-3 items-center">
-            <h3 className="font-bold text-gray-800">{ product.length }</h3>
+            <h3 className="font-bold text-gray-800">{product.length}</h3>
             <button
               className="p-2 border border-gray-800 rounded-md relative"
               onClick={() => setShowModal(!showModal)}
@@ -69,52 +98,56 @@ const Product = () => {
             </button>
           </div>
         </div>
+        {loading ? ( <h3 className="font-semibold text-gray-500 text-center"> Loading... </h3> ) : ''}
+        {product.length == 0 ? ( <h1 className="text-center font-bold text-gray-500 text-3xl">Product Not Found</h1> ) : ""}
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 my-5">
-          {product.map((hasil) => (
-            <Link href={`/product/detail/${hasil.title}`} key={hasil.id}>
-              <div
-                className="relative border border-gray-300 cursor-pointer hover:shadow-lg hover:shadow-gray-300 transition-all duration-300 ease-linear"
-                key={hasil.id}
-              >
-                <div className="relative">
-                  <img
-                    src={hasil.images[0]}
-                    alt={hasil.title}
-                    className="w-fit h-48 object-cover object-center"
-                  />
-                  <span className="absolute top-3 left-3 text-gray-700 text-sm">
-                    {hasil.category}
-                  </span>
-                </div>
-                <div className="lg:p-5 p-">
-                  <span className="text-sm text-gray-600">{hasil.title}</span>
-                  <h3 className="font-bold text-md lg:text-xl text-gray-800">
-                    Rp {parseInt(hasil.price * 15000).toLocaleString("id-ID")}
-                  </h3>
-                  <div className="flex justify-between items-center mt-3">
-                    <a href="#" className="text-blue-500 font-semibold text-sm">
-                      Add to cart
-                    </a>
-                    <div className="flex items-center gap-1 cursor-pointer">
-                      <img
-                        src={
-                          likes
-                            ? "../images/icons/love-pink-fill.svg"
-                            : "../images/icons/love.svg"
-                        }
-                        alt="icon"
-                        className="w-4"
-                        onClick={() => setLikes(!likes)}
-                      />
-                      <span className="font-medium text-gray-700 text-sm">
-                        {!likes ? countLike : countLike + 1}
-                      </span>
+          {loading ? "" : (
+            product.map((hasil) => (
+              <Link href={"/product/" + hasil.id} key={hasil.id}>
+                <div
+                  className="relative border border-gray-300 cursor-pointer hover:shadow-lg hover:shadow-gray-300 transition-all duration-300 ease-linear"
+                  key={hasil.id}
+                >
+                  <div className="relative">
+                    <img
+                      src={hasil.images[0]}
+                      alt={hasil.title}
+                      className="w-full h-48 object-cover object-center"
+                    />
+                    <span className="absolute top-3 left-3 text-gray-700 text-sm">
+                      {hasil.category}
+                    </span>
+                  </div>
+                  <div className="lg:p-5 p-">
+                    <span className="text-sm text-gray-600">{hasil.title}</span>
+                    <h3 className="font-bold text-md lg:text-xl text-gray-800">
+                      Rp {parseInt(hasil.price * 15000).toLocaleString("id-ID")}
+                    </h3>
+                    <div className="flex justify-between items-center mt-3">
+                      <a href="#" className="text-blue-500 font-semibold text-sm">
+                        Add to cart
+                      </a>
+                      <div className="flex items-center gap-1 cursor-pointer">
+                        <img
+                          src={
+                            likes
+                              ? "../images/icons/love-pink-fill.svg"
+                              : "../images/icons/love.svg"
+                          }
+                          alt="icon"
+                          className="w-4"
+                          onClick={() => setLikes(!likes)}
+                        />
+                        <span className="font-medium text-gray-700 text-sm">
+                          {!likes ? countLike : countLike + 1}
+                        </span>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </Link>
-          ))}
+              </Link>
+            ))
+          )}
         </div>
         <div className="my-5 flex gap-3 bg-blue-200 p-5 rounded-lg lg:my-10">
           <div className="block w-full lg:py-5 text-center">

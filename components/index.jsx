@@ -21,7 +21,7 @@ export { default as OrderNavbar } from "./navbar/ordernav";
 export { default as VoucherNavbar } from "./navbar/vouchernav";
 export { default as Order } from "./order";
 export { default as Product } from "./product";
-export { default as ProductDetail } from "./product/detail";
+export { default as ProductDetail } from "./product/[id]";
 export { default as SubHeader } from "./subheader";
 export { default as User } from "./user/profile";
 export { default as Payment } from "./user/profile/payment";
