@@ -74,7 +74,7 @@ const Product = () => {
         </div>
         <div className="flex justify-between items-center">
           <h3 className="font-semibold text-gray-800 lg:text-2xl">
-            Latest Product
+            Our best product
           </h3>
           <div className="flex gap-3 items-center">
             <h3 className="font-bold text-gray-800">{product.length}</h3>
@@ -114,11 +114,11 @@ const Product = () => {
                       alt={hasil.title}
                       className="w-full h-48 object-cover object-center"
                     />
-                    <span className="absolute top-3 left-3 text-gray-700 text-sm">
+                    <small className="absolute top-3 left-3 text-gray-300 text-[10px] bg-black py-1 px-2 shadow-md">
                       {hasil.category}
-                    </span>
+                    </small>
                   </div>
-                  <div className="lg:p-5 p-">
+                  <div className="lg:p-5 p-3">
                     <span className="text-sm text-gray-600">{hasil.title}</span>
                     <h3 className="font-bold text-md lg:text-xl text-gray-800">
                       Rp {parseInt(hasil.price * 15000).toLocaleString("id-ID")}
